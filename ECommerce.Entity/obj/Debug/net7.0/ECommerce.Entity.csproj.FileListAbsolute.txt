@@ -1,0 +1,14 @@
+C:\Users\LENOVO\Desktop\Bilge Adam\MVC\29.08.2023\ECommerce\ECommerce.Entity\bin\Debug\net7.0\ECommerce.Entity.deps.json
+C:\Users\LENOVO\Desktop\Bilge Adam\MVC\29.08.2023\ECommerce\ECommerce.Entity\bin\Debug\net7.0\ECommerce.Entity.runtimeconfig.json
+C:\Users\LENOVO\Desktop\Bilge Adam\MVC\29.08.2023\ECommerce\ECommerce.Entity\bin\Debug\net7.0\ECommerce.Entity.dll
+C:\Users\LENOVO\Desktop\Bilge Adam\MVC\29.08.2023\ECommerce\ECommerce.Entity\bin\Debug\net7.0\ECommerce.Entity.pdb
+C:\Users\LENOVO\Desktop\Bilge Adam\MVC\29.08.2023\ECommerce\ECommerce.Entity\obj\Debug\net7.0\ECommerce.Entity.csproj.AssemblyReference.cache
+C:\Users\LENOVO\Desktop\Bilge Adam\MVC\29.08.2023\ECommerce\ECommerce.Entity\obj\Debug\net7.0\ECommerce.Entity.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\LENOVO\Desktop\Bilge Adam\MVC\29.08.2023\ECommerce\ECommerce.Entity\obj\Debug\net7.0\ECommerce.Entity.AssemblyInfoInputs.cache
+C:\Users\LENOVO\Desktop\Bilge Adam\MVC\29.08.2023\ECommerce\ECommerce.Entity\obj\Debug\net7.0\ECommerce.Entity.AssemblyInfo.cs
+C:\Users\LENOVO\Desktop\Bilge Adam\MVC\29.08.2023\ECommerce\ECommerce.Entity\obj\Debug\net7.0\ECommerce.Entity.csproj.CoreCompileInputs.cache
+C:\Users\LENOVO\Desktop\Bilge Adam\MVC\29.08.2023\ECommerce\ECommerce.Entity\obj\Debug\net7.0\ECommerce.Entity.dll
+C:\Users\LENOVO\Desktop\Bilge Adam\MVC\29.08.2023\ECommerce\ECommerce.Entity\obj\Debug\net7.0\refint\ECommerce.Entity.dll
+C:\Users\LENOVO\Desktop\Bilge Adam\MVC\29.08.2023\ECommerce\ECommerce.Entity\obj\Debug\net7.0\ECommerce.Entity.pdb
+C:\Users\LENOVO\Desktop\Bilge Adam\MVC\29.08.2023\ECommerce\ECommerce.Entity\obj\Debug\net7.0\ECommerce.Entity.genruntimeconfig.cache
+C:\Users\LENOVO\Desktop\Bilge Adam\MVC\29.08.2023\ECommerce\ECommerce.Entity\obj\Debug\net7.0\ref\ECommerce.Entity.dll
