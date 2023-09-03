@@ -9,6 +9,13 @@ namespace ECommerce.DAL.Context
         public DbSet<Category> Categories { get; set; }
         public DbSet<Product> Products { get; set; }
 
+
+        protected override void OnModelCreating(ModelBuilder builder)
+        {
+            base.OnModelCreating(builder);
+        }
+
+
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             if (!optionsBuilder.IsConfigured)

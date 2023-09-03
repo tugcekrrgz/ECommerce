@@ -11,8 +11,6 @@ namespace ECommerce.Entity.Interface
     {
         public T MasterID { get; set; }
 
-
-
         public int Id { get; set; }
 
         public Status Status { get; set; }

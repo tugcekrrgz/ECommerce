@@ -1,10 +1,5 @@
 ﻿using ECommerce.Entity.Enum;
 using ECommerce.Entity.Interface;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ECommerce.Entity.Base
 {
@@ -16,6 +11,7 @@ namespace ECommerce.Entity.Base
             CreatedDate = DateTime.Now;
             CreatedComputerName = Environment.MachineName;
             CreatedIpAddress = "192.161.1.1";//todo
+            MasterID = Guid.NewGuid();
         }
 
         public int Id { get ; set ; }
@@ -26,6 +22,7 @@ namespace ECommerce.Entity.Base
         public DateTime? UpdatedDate { get ; set ; }
         public string? UpdatedComputerName { get ; set ; }
         public string? UpdatedIpAddress { get ; set ; }
-        Guid IEntity<Guid>.MasterID { get ; set ; }
+        public Guid MasterID { get ; set ; }
+        
     }
 }

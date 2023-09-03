@@ -8,7 +8,7 @@ namespace ECommerce.Entity.Entity
         [MaxLength(255)]
         public string ProductName { get; set; }
 
-        [MaxLength(5000)]
+        [MaxLength(500)]
         public string? Description { get; set; }
         public decimal UnitPrice { get; set; }
         public short UnitsInStock { get; set; }
