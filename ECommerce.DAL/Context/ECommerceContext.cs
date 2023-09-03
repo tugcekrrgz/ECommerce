@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace ECommerce.DAL.Context
 {
-    internal class ECommerceContext:IdentityDbContext
+    public class ECommerceContext:IdentityDbContext
     {
         public DbSet<Category> Categories { get; set; }
         public DbSet<Product> Products { get; set; }
