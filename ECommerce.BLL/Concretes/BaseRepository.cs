@@ -60,7 +60,7 @@ namespace ECommerce.BLL.Concrete
 
         public IEnumerable<T> GetAll()
         {
-            return _entities.Where(x => x.Status == Entity.Enum.Status.Active).ToList();
+            return _entities.Where(x => x.Status == Entity.Enum.Status.Active || x.Status == Entity.Enum.Status.Updated).ToList();
         }
 
         public T GetById(int id)
