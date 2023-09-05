@@ -9,6 +9,7 @@
       "ECommerce.MVC/1.0.0": {
         "dependencies": {
           "ECommerce.BLL": "1.0.0",
+          "ECommerce.Common": "1.0.0",
           "ECommerce.IOC": "1.0.0",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "7.0.9"
         },
@@ -2516,8 +2517,14 @@
           "ECommerce.BLL.dll": {}
         }
       },
+      "ECommerce.Common/1.0.0": {
+        "runtime": {
+          "ECommerce.Common.dll": {}
+        }
+      },
       "ECommerce.DAL/1.0.0": {
         "dependencies": {
+          "ECommerce.Common": "1.0.0",
           "ECommerce.Entity": "1.0.0",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "7.0.10",
           "Microsoft.EntityFrameworkCore.SqlServer": "7.0.10"
@@ -4114,6 +4121,11 @@
       "hashPath": "system.xml.xdocument.4.3.0.nupkg.sha512"
     },
     "ECommerce.BLL/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ECommerce.Common/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

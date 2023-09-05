@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "QRl5eT4aHay7jOixml+sJRtups+mYAyuzMjPeFZVyNQ=",
+  "Hash": "It5YyJoBE03X3DVHy5lZY9nLMsgTp/PUJN4Jqq7H9Co=",
   "Source": "ECommerce.MVC",
   "BasePath": "_content/ECommerce.MVC",
   "Mode": "Default",
@@ -491,6 +491,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\dist\\css\\alt\\adminlte.plugins.min.css.map"
+    },
+    {
+      "Identity": "C:\\Users\\LENOVO\\Desktop\\Bilge Adam\\MVC\\29.08.2023\\ECommerce\\ECommerce.MVC\\wwwroot\\dist\\img\\10cb4111-ea03-41e1-8399-c709a9327faf.png",
+      "SourceId": "ECommerce.MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\LENOVO\\Desktop\\Bilge Adam\\MVC\\29.08.2023\\ECommerce\\ECommerce.MVC\\wwwroot\\",
+      "BasePath": "_content/ECommerce.MVC",
+      "RelativePath": "dist/img/10cb4111-ea03-41e1-8399-c709a9327faf.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\dist\\img\\10cb4111-ea03-41e1-8399-c709a9327faf.png"
+    },
+    {
+      "Identity": "C:\\Users\\LENOVO\\Desktop\\Bilge Adam\\MVC\\29.08.2023\\ECommerce\\ECommerce.MVC\\wwwroot\\dist\\img\\69e1da6c-1ceb-4b5b-ae02-77204e95f990.png",
+      "SourceId": "ECommerce.MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\LENOVO\\Desktop\\Bilge Adam\\MVC\\29.08.2023\\ECommerce\\ECommerce.MVC\\wwwroot\\",
+      "BasePath": "_content/ECommerce.MVC",
+      "RelativePath": "dist/img/69e1da6c-1ceb-4b5b-ae02-77204e95f990.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\dist\\img\\69e1da6c-1ceb-4b5b-ae02-77204e95f990.png"
     },
     {
       "Identity": "C:\\Users\\LENOVO\\Desktop\\Bilge Adam\\MVC\\29.08.2023\\ECommerce\\ECommerce.MVC\\wwwroot\\dist\\img\\AdminLTELogo.png",

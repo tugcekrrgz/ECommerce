@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v7.0": {
       "ECommerce.DAL/1.0.0": {
         "dependencies": {
+          "ECommerce.Common": "1.0.0",
           "ECommerce.Entity": "1.0.0",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "7.0.10",
           "Microsoft.EntityFrameworkCore.SqlServer": "7.0.10",
@@ -728,6 +729,11 @@
           }
         }
       },
+      "ECommerce.Common/1.0.0": {
+        "runtime": {
+          "ECommerce.Common.dll": {}
+        }
+      },
       "ECommerce.Entity/1.0.0": {
         "dependencies": {
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "7.0.10",
@@ -1248,6 +1254,11 @@
       "sha512": "sha512-c1ho9WU9ZxMZawML+ssPKZfdnrg/OjR3pe0m9v8230z3acqphwvPJqzAkH54xRYm5ntZHGG1EPP3sux9H3qSPg==",
       "path": "system.windows.extensions/5.0.0",
       "hashPath": "system.windows.extensions.5.0.0.nupkg.sha512"
+    },
+    "ECommerce.Common/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "ECommerce.Entity/1.0.0": {
       "type": "project",

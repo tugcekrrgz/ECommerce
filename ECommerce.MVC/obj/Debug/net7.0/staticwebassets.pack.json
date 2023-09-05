@@ -113,6 +113,14 @@
       "PackagePath": "staticwebassets\\dist\\css\\alt\\adminlte.plugins.min.css.map"
     },
     {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Bilge Adam\\MVC\\29.08.2023\\ECommerce\\ECommerce.MVC\\wwwroot\\dist\\img\\10cb4111-ea03-41e1-8399-c709a9327faf.png",
+      "PackagePath": "staticwebassets\\dist\\img\\10cb4111-ea03-41e1-8399-c709a9327faf.png"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Bilge Adam\\MVC\\29.08.2023\\ECommerce\\ECommerce.MVC\\wwwroot\\dist\\img\\69e1da6c-1ceb-4b5b-ae02-77204e95f990.png",
+      "PackagePath": "staticwebassets\\dist\\img\\69e1da6c-1ceb-4b5b-ae02-77204e95f990.png"
+    },
+    {
       "Id": "C:\\Users\\LENOVO\\Desktop\\Bilge Adam\\MVC\\29.08.2023\\ECommerce\\ECommerce.MVC\\wwwroot\\dist\\img\\AdminLTELogo.png",
       "PackagePath": "staticwebassets\\dist\\img\\AdminLTELogo.png"
     },

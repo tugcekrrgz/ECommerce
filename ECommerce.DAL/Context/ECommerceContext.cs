@@ -1,4 +1,6 @@
-﻿using ECommerce.Entity.Entity;
+﻿using ECommerce.Common;
+using ECommerce.Entity.Base;
+using ECommerce.Entity.Entity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
@@ -24,6 +26,41 @@ namespace ECommerce.DAL.Context
             }
 
             base.OnConfiguring(optionsBuilder);
+        }
+
+        public override int SaveChanges()
+        {
+            //Veri yeni eklenirken
+
+
+            //Veri güncellenirken
+
+            //Kaydedilmek üzere gönderilen veriyi temsil ediyor
+            var modifierEntries = ChangeTracker.Entries().Where(x => x.State==EntityState.Modified || x.State==EntityState.Added);
+            try
+            {
+                foreach (var item in modifierEntries)
+                {
+                    var entityRepository = item.Entity as BaseClass;
+                    if (item.State == EntityState.Modified)
+                    {
+                        entityRepository.UpdatedDate = DateTime.Now;
+                        entityRepository.UpdatedIpAddress = IPAddressFinder.GetIPAddress();
+                        entityRepository.UpdatedComputerName=Environment.MachineName;
+                    }
+                    else if (item.State==EntityState.Added)
+                    {
+                        entityRepository.CreatedDate=DateTime.Now;
+                        entityRepository.CreatedIpAddress = IPAddressFinder.GetIPAddress();
+                        entityRepository.CreatedComputerName=Environment.MachineName;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                throw;
+            }
+            return base.SaveChanges();
         }
     }
 }

@@ -17,3 +17,5 @@ C:\Users\LENOVO\Desktop\Bilge Adam\MVC\29.08.2023\ECommerce\ECommerce.IOC\obj\De
 C:\Users\LENOVO\Desktop\Bilge Adam\MVC\29.08.2023\ECommerce\ECommerce.IOC\obj\Debug\net7.0\refint\ECommerce.IOC.dll
 C:\Users\LENOVO\Desktop\Bilge Adam\MVC\29.08.2023\ECommerce\ECommerce.IOC\obj\Debug\net7.0\ECommerce.IOC.pdb
 C:\Users\LENOVO\Desktop\Bilge Adam\MVC\29.08.2023\ECommerce\ECommerce.IOC\obj\Debug\net7.0\ref\ECommerce.IOC.dll
+C:\Users\LENOVO\Desktop\Bilge Adam\MVC\29.08.2023\ECommerce\ECommerce.IOC\bin\Debug\net7.0\ECommerce.Common.dll
+C:\Users\LENOVO\Desktop\Bilge Adam\MVC\29.08.2023\ECommerce\ECommerce.IOC\bin\Debug\net7.0\ECommerce.Common.pdb

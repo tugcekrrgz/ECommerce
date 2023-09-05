@@ -1124,10 +1124,21 @@
           "bin/placeholder/ECommerce.BLL.dll": {}
         }
       },
+      "ECommerce.Common/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/ECommerce.Common.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ECommerce.Common.dll": {}
+        }
+      },
       "ECommerce.DAL/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
+          "ECommerce.Common": "1.0.0",
           "ECommerce.Entity": "1.0.0",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "7.0.10",
           "Microsoft.EntityFrameworkCore.SqlServer": "7.0.10"
@@ -3392,6 +3403,11 @@
       "type": "project",
       "path": "../ECommerce.BLL/ECommerce.BLL.csproj",
       "msbuildProject": "../ECommerce.BLL/ECommerce.BLL.csproj"
+    },
+    "ECommerce.Common/1.0.0": {
+      "type": "project",
+      "path": "../ECommerce.Common/ECommerce.Common.csproj",
+      "msbuildProject": "../ECommerce.Common/ECommerce.Common.csproj"
     },
     "ECommerce.DAL/1.0.0": {
       "type": "project",

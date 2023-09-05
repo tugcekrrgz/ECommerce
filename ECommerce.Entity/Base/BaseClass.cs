@@ -10,15 +10,15 @@ namespace ECommerce.Entity.Base
             Status = Status.Active;
             CreatedDate = DateTime.Now;
             CreatedComputerName = Environment.MachineName;
-            CreatedIpAddress = "192.161.1.1";//todo
+            CreatedIpAddress = "192.161.1.1"; //todo
             MasterID = Guid.NewGuid();
         }
 
         public int Id { get ; set ; }
         public Status Status { get ; set ; }
         public DateTime CreatedDate { get ; set ; }
-        public string CreatedComputerName { get ; set ; }
-        public string CreatedIpAddress { get ; set ; }
+        public string? CreatedComputerName { get ; set ; }
+        public string? CreatedIpAddress { get ; set ; }
         public DateTime? UpdatedDate { get ; set ; }
         public string? UpdatedComputerName { get ; set ; }
         public string? UpdatedIpAddress { get ; set ; }

@@ -1,4 +1,5 @@
-﻿
+﻿@model List<ECommerce.Entity.Entity.Product>
+
 @{
     ViewData["Title"] = "Ürün Listesi";
     Layout = "~/Areas/Dashboard/Views/Shared/_DashboardLayout.cshtml";
@@ -8,8 +9,11 @@
     <div class="row">
         <div class="col-md-12">
             <div class="card">
-                <div class="card-header">
+                <div class="card-header d-flex justify-content-between">
                     <h2>@ViewData["Title"]</h2>
+                    <div class="p-1">
+                        <a asp-action="Create" asp-controller="Product" class="btn btn-success btn-sm">Ürün Ekle</a>
+                    </div>
                 </div>
                 <div class="card-body">
                     <table class="table table-hover">
@@ -17,15 +21,57 @@
                             <tr>
                                 <th></th>
                                 <th>ID</th>
-                                <th>Ürün Ad</th>
-                                <th>Kategori</th>
-                                <th>Ürün Açıklama</th>
+                                <th>Ürün Ad</th> 
                                 <th>Fiyat</th>
                                 <th>Stok</th>
+                                <th>Kategori</th>
+                                <th>Açıklama</th>      
+                                <th>Durum</th>
                                 <th></th>
                             </tr>
                         </thead>
                         <tbody>
+                            @foreach(var product in Model){
+                                <tr>
+                                    <td>
+                                        @if(product.ImagePath==null){
+                                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJiT-UHSm6w0Jperb8SitpfoAKeMUE3uynPg5YO-2Drw&s" width="48" height="48" />
+                                        }
+                                        else
+                                        {
+                                            <img src="/dist/img/@product.ImagePath" width="48" height="48" />
+                                        }
+                                    </td>
+                                    <td>@product.Id</td>
+                                    <td>@product.ProductName</td>
+                                    <td>@product.UnitPrice</td>
+                                    <td>@product.UnitsInStock</td>
+                                    @*<td>@if (product.CategoryId != null)
+                                        {
+                                            <span>@product.Category.CategoryName</span>
+                                        }
+                                    </td>*@
+                                    <td>@product.Description</td>
+                                    <td>
+                                        @switch (product.Status)
+                                        {
+                                            case ECommerce.Entity.Enum.Status.Active:
+                                                <span>Aktif</span>
+                                                break;
+                                            case ECommerce.Entity.Enum.Status.Deleted:
+                                                <span>Silinmiş</span>
+                                                break;
+                                            case ECommerce.Entity.Enum.Status.Updated:
+                                                <span>Güncellenmiş</span>
+                                                break;
+                                        }
+                                    </td>
+                                    <td>
+                                        <a class="btn btn-xs btn-warning" asp-action="Update" asp-controller="Product" asp-route-id="@product.Id">Düzenle</a>
+                                        <a class="btn btn-xs btn-danger" asp-action="Delete" asp-controller="Product" asp-route-id="@product.Id">Sil</a>
+                                    </td>
+                                </tr>
+                            }
                         </tbody>
                     </table>
                 </div>

@@ -15,3 +15,5 @@ C:\Users\LENOVO\Desktop\Bilge Adam\MVC\29.08.2023\ECommerce\ECommerce.DAL\obj\De
 C:\Users\LENOVO\Desktop\Bilge Adam\MVC\29.08.2023\ECommerce\ECommerce.DAL\obj\Debug\net7.0\ECommerce.DAL.pdb
 C:\Users\LENOVO\Desktop\Bilge Adam\MVC\29.08.2023\ECommerce\ECommerce.DAL\obj\Debug\net7.0\ECommerce.DAL.genruntimeconfig.cache
 C:\Users\LENOVO\Desktop\Bilge Adam\MVC\29.08.2023\ECommerce\ECommerce.DAL\obj\Debug\net7.0\ref\ECommerce.DAL.dll
+C:\Users\LENOVO\Desktop\Bilge Adam\MVC\29.08.2023\ECommerce\ECommerce.DAL\bin\Debug\net7.0\ECommerce.Common.dll
+C:\Users\LENOVO\Desktop\Bilge Adam\MVC\29.08.2023\ECommerce\ECommerce.DAL\bin\Debug\net7.0\ECommerce.Common.pdb

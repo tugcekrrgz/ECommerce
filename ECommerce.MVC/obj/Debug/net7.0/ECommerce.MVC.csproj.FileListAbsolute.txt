@@ -259,3 +259,5 @@ C:\Users\LENOVO\Desktop\Bilge Adam\MVC\29.08.2023\ECommerce\ECommerce.MVC\bin\De
 C:\Users\LENOVO\Desktop\Bilge Adam\MVC\29.08.2023\ECommerce\ECommerce.MVC\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\LENOVO\Desktop\Bilge Adam\MVC\29.08.2023\ECommerce\ECommerce.MVC\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
 C:\Users\LENOVO\Desktop\Bilge Adam\MVC\29.08.2023\ECommerce\ECommerce.MVC\bin\Debug\net7.0\ECommerce.MVC.staticwebassets.runtime.json
+C:\Users\LENOVO\Desktop\Bilge Adam\MVC\29.08.2023\ECommerce\ECommerce.MVC\bin\Debug\net7.0\ECommerce.Common.dll
+C:\Users\LENOVO\Desktop\Bilge Adam\MVC\29.08.2023\ECommerce\ECommerce.MVC\bin\Debug\net7.0\ECommerce.Common.pdb

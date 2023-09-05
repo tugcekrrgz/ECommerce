@@ -14,7 +14,7 @@ namespace ECommerce.Entity.Entity
         public short UnitsInStock { get; set; }
 
         [MaxLength(255)]
-        public string ImagePath { get; set; }
+        public string? ImagePath { get; set; }
 
         //Mapping
         public int CategoryId { get; set; }
