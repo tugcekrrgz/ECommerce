@@ -45,11 +45,7 @@ namespace ECommerce.MVC.Areas.Dashboard.Controllers
             }            
         }
 
-        public IActionResult Delete()
-        {
-            return View();
-        }
-
+        
         public IActionResult Update(int id)
         {
             var category=_categoryService.GetById(id);
@@ -85,5 +81,19 @@ namespace ECommerce.MVC.Areas.Dashboard.Controllers
                 return View(updated);
             }            
         }
+
+
+        public IActionResult Delete(int id)
+        {
+            //todo: Silmek istediğinize emin misiniz diye sor ve cevaba göre sil.
+            var category = _categoryService.GetById(id);
+            category.Status = Entity.Enum.Status.Deleted;
+
+            var result=_categoryService.Delete(id);
+            TempData["Result"] = result;
+            return RedirectToAction("Index");
+        }
+
+
     }
 }
