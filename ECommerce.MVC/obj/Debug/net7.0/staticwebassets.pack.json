@@ -1,6 +1,18 @@
 {
   "Files": [
     {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Bilge Adam\\MVC\\29.08.2023\\ECommerce\\ECommerce.MVC\\wwwroot\\client\\css\\styles.css",
+      "PackagePath": "staticwebassets\\client\\css\\styles.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Bilge Adam\\MVC\\29.08.2023\\ECommerce\\ECommerce.MVC\\wwwroot\\client\\index.html",
+      "PackagePath": "staticwebassets\\client\\index.html"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Bilge Adam\\MVC\\29.08.2023\\ECommerce\\ECommerce.MVC\\wwwroot\\client\\js\\scripts.js",
+      "PackagePath": "staticwebassets\\client\\js\\scripts.js"
+    },
+    {
       "Id": "C:\\Users\\LENOVO\\Desktop\\Bilge Adam\\MVC\\29.08.2023\\ECommerce\\ECommerce.MVC\\wwwroot\\dist\\css\\adminlte.css",
       "PackagePath": "staticwebassets\\dist\\css\\adminlte.css"
     },

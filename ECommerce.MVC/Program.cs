@@ -16,7 +16,8 @@ builder.Services.AddDbContext<ECommerceContext>();
 
 //Identity Service
 //AddEntityFrameworkStores kýsmýný tanýmlamazsak tiplerin nereye ait olacaðýný bilemez. 
-builder.Services.AddIdentity<IdentityUser,IdentityRole>().AddEntityFrameworkStores<ECommerceContext>();
+//Kullanýcýlara ait token oluiturabilmek için eklendi.
+builder.Services.AddIdentity<IdentityUser,IdentityRole>().AddEntityFrameworkStores<ECommerceContext>().AddDefaultTokenProviders();
 
 
 ServiceIOC.ServiceConfigure(builder.Services);

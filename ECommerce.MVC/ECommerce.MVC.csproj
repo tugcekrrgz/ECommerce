@@ -15,6 +15,7 @@
   <ItemGroup>
     <Folder Include="Areas\Dashboard\Data\" />
     <Folder Include="Models\" />
+    <Folder Include="wwwroot\client\" />
   </ItemGroup>
 
   <ItemGroup>
