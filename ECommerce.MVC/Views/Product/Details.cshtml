@@ -1,0 +1,46 @@
+﻿@model Product
+
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<section class="py-5">
+    <div class="container px-4 px-lg-5 my-5">
+        <div class="row gx-4 gx-lg-5 align-items-center">
+            <div class="col-md-6">
+                @if(Model.ImagePath != null){
+                    <img class="card-img-top mb-5 mb-md-0" src="~/dist/img/@Model.ImagePath" alt="...">
+                }
+                else
+                {
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJiT-UHSm6w0Jperb8SitpfoAKeMUE3uynPg5YO-2Drw&s" alt="Empty" height="300" />
+                }
+            </div>
+            <div class="col-md-6">
+                <div class="small mb-1">SKU: BST-498</div>
+                <h1 class="display-5 fw-bolder">@Model.ProductName.ToUpper()</h1>
+                <div class="fs-5 mb-5">
+                    <span>@Model.UnitPrice</span>
+                </div>
+                <p class="lead">
+                    @if(Model.Description != null){
+                        @Model.Description
+                    }
+                    else
+                    {
+                        <span>Ürün açıklaması bulunmamaktadır.</span>
+                    }
+                </p>
+                <div class="d-flex">
+                    <input class="form-control text-center me-3" id="inputQuantity" type="number" value="1" style="max-width: 3rem">
+                    <a asp-action="AddToCard" asp-route-id="@Model.Id" asp-controller="Home" class="btn btn-outline-dark mt-auto">
+                        <i class="bi-cart-fill me-1"></i>
+                        Add To Card
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+

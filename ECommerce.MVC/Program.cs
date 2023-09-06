@@ -39,7 +39,29 @@ builder.Services.AddScoped<IProductService, ProductService>();
 //OrderDetail Service
 */
 
+builder.Services.AddSession(x => {
+    x.Cookie.Name = "ECommerce_Cart_Session";
+    x.IdleTimeout=TimeSpan.FromMinutes(1);
+});
+
+
+builder.Services.ConfigureApplicationCookie(x =>
+{
+    x.LoginPath = "/Home/Login";
+    x.AccessDeniedPath = "/Home/Login";
+    x.Cookie = new CookieBuilder
+    {
+        Name = "ecommerce_cookie"
+    };
+    x.SlidingExpiration = true;
+    x.ExpireTimeSpan = TimeSpan.FromMinutes(1);
+});
+
+
 var app = builder.Build();
+
+
+app.UseRouting();
 
 //Kimlik Doðrulama 
 app.UseAuthentication();
@@ -47,9 +69,9 @@ app.UseAuthentication();
 //Yetkilendirme
 app.UseAuthorization();
 
-app.UseRouting();
-
 app.UseStaticFiles();
+
+app.UseSession();
 
 //Endpoint
 app.UseEndpoints(endpoints =>

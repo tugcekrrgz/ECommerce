@@ -1,11 +1,13 @@
 ﻿using ECommerce.BLL.AbstractServices;
 using ECommerce.Entity.Entity;
 using ECommerce.MVC.Areas.Dashboard.Models.ViewModels;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ECommerce.MVC.Areas.Dashboard.Controllers
 {
     [Area("Dashboard")]
+    [Authorize(Roles ="Admin")]
     public class CategoryController : Controller
     {
         private readonly ICategoryService _categoryService;

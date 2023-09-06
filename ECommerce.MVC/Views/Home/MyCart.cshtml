@@ -1,0 +1,52 @@
+﻿
+@{
+    var sepet = SessionHelper.GetProductFromJson<Cart>(Context.Session, "sepet");
+    ViewData["Title"] = "MyCart";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    decimal? totalPrice = 0;
+    //todo: Güncelleme ve silme işlemleri yapılacak.
+}
+
+<div class="row">
+    <div class="col-md-9">
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th>Ürün Adı</th>
+                    <th>Birim Fiyat</th>
+                    <th>Adet</th>
+                    <th>Ara Toplam</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in sepet._myCart)
+                {
+                    totalPrice += item.Value.SubTotal;
+                    <tr>
+                        <th>@item.Value.ProductName</th>
+                        <th>@item.Value.UnitPrice</th>
+                        <th class="d-flex">
+                            <input type="number" value="@item.Value.Quantity" class="form-control"/>
+                            <button class="btn btn-warning btn-sm ms-3">Güncelle</button>
+                        </th>
+                        <th>
+                            @item.Value.SubTotal
+                            <button class="btn btn-danger btn-sm ms-3">Sil</button>
+                        </th>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+    <div class="col-md-3">
+        <div class="card">
+            <div class="card-body">
+                <span>Ödemeniz Gereken Toplam Tutar : </span>
+                <h1>@totalPrice TL</h1>
+                <a asp-action="Index" asp-controller="Home" class="btn btn-info mt-3">Alışverişe Devam Et</a>
+                <a asp-action="CompleteCart" asp-controller="Home" class="btn btn-primary mt-3">Ödeme Yap</a>
+            </div>
+        </div>
+    </div>
+</div>
+

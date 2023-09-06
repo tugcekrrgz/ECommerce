@@ -1,10 +1,12 @@
 C:\Users\LENOVO\Desktop\Bilge Adam\MVC\29.08.2023\ECommerce\ECommerce.BLL\bin\Debug\net7.0\ECommerce.BLL.deps.json
 C:\Users\LENOVO\Desktop\Bilge Adam\MVC\29.08.2023\ECommerce\ECommerce.BLL\bin\Debug\net7.0\ECommerce.BLL.dll
 C:\Users\LENOVO\Desktop\Bilge Adam\MVC\29.08.2023\ECommerce\ECommerce.BLL\bin\Debug\net7.0\ECommerce.BLL.pdb
+C:\Users\LENOVO\Desktop\Bilge Adam\MVC\29.08.2023\ECommerce\ECommerce.BLL\bin\Debug\net7.0\ECommerce.Common.dll
 C:\Users\LENOVO\Desktop\Bilge Adam\MVC\29.08.2023\ECommerce\ECommerce.BLL\bin\Debug\net7.0\ECommerce.DAL.dll
 C:\Users\LENOVO\Desktop\Bilge Adam\MVC\29.08.2023\ECommerce\ECommerce.BLL\bin\Debug\net7.0\ECommerce.Entity.dll
 C:\Users\LENOVO\Desktop\Bilge Adam\MVC\29.08.2023\ECommerce\ECommerce.BLL\bin\Debug\net7.0\ECommerce.DAL.pdb
 C:\Users\LENOVO\Desktop\Bilge Adam\MVC\29.08.2023\ECommerce\ECommerce.BLL\bin\Debug\net7.0\ECommerce.Entity.pdb
+C:\Users\LENOVO\Desktop\Bilge Adam\MVC\29.08.2023\ECommerce\ECommerce.BLL\bin\Debug\net7.0\ECommerce.Common.pdb
 C:\Users\LENOVO\Desktop\Bilge Adam\MVC\29.08.2023\ECommerce\ECommerce.BLL\obj\Debug\net7.0\ECommerce.BLL.csproj.AssemblyReference.cache
 C:\Users\LENOVO\Desktop\Bilge Adam\MVC\29.08.2023\ECommerce\ECommerce.BLL\obj\Debug\net7.0\ECommerce.BLL.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\LENOVO\Desktop\Bilge Adam\MVC\29.08.2023\ECommerce\ECommerce.BLL\obj\Debug\net7.0\ECommerce.BLL.AssemblyInfoInputs.cache
@@ -15,5 +17,3 @@ C:\Users\LENOVO\Desktop\Bilge Adam\MVC\29.08.2023\ECommerce\ECommerce.BLL\obj\De
 C:\Users\LENOVO\Desktop\Bilge Adam\MVC\29.08.2023\ECommerce\ECommerce.BLL\obj\Debug\net7.0\refint\ECommerce.BLL.dll
 C:\Users\LENOVO\Desktop\Bilge Adam\MVC\29.08.2023\ECommerce\ECommerce.BLL\obj\Debug\net7.0\ECommerce.BLL.pdb
 C:\Users\LENOVO\Desktop\Bilge Adam\MVC\29.08.2023\ECommerce\ECommerce.BLL\obj\Debug\net7.0\ref\ECommerce.BLL.dll
-C:\Users\LENOVO\Desktop\Bilge Adam\MVC\29.08.2023\ECommerce\ECommerce.BLL\bin\Debug\net7.0\ECommerce.Common.dll
-C:\Users\LENOVO\Desktop\Bilge Adam\MVC\29.08.2023\ECommerce\ECommerce.BLL\bin\Debug\net7.0\ECommerce.Common.pdb

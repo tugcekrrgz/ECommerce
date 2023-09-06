@@ -1,4 +1,8 @@
-﻿<!DOCTYPE html>
+﻿@{
+    var sepet = SessionHelper.GetProductFromJson<Cart>(Context.Session,"sepet");
+}
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -24,12 +28,14 @@
                     <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="#!">About</a></li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Shop</a>
+                        <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Categories</a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#!">All Products</a></li>
-                            <li><hr class="dropdown-divider" /></li>
-                            <li><a class="dropdown-item" href="#!">Popular Items</a></li>
-                            <li><a class="dropdown-item" href="#!">New Arrivals</a></li>
+                            @if(ViewBag.Categories != null){
+                                foreach (var category in ViewBag.Categories as List<Category>)
+                                {
+                                    <li><a asp-action="GetProducts" asp-controller="Category" asp-route-id="@category.Id" class="dropdown-item">@category.CategoryName</a></li>
+                                }
+                            }
                         </ul>
                     </li>
                 </ul>
@@ -37,19 +43,41 @@
 
                 <div class="d-flex">
                     <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a asp-action="Login" asp-controller="Home" class="nav-link">Login</a>
-                        </li>
-                        <li class="nav-item">
-                            <a asp-action="Register" asp-controller="Home" class="nav-link">Register</a>
-                        </li>
+                        @if(User.Identity.IsAuthenticated){
+                            <li class="nav-item">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">@User.Identity.Name.ToUpper()</a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+
+                                    @if(User.IsInRole("Admin")){
+                                            <li><a asp-action="Index" asp-controller="Home" asp-area="Dashboard" class="dropdown-item">Dashboard</a></li>
+                                        }
+                                    <li><a class="dropdown-item" href="#!">Profile</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item" asp-action="Logout" asp-controller="Home">Logout</a></li>
+                                </ul>
+                            </li>
+                                <a asp-action="Profile" asp-controller="User" asp-route-id="@User.Identity" class="nav-link"></a>
+                            </li>
+                        }
+                        else
+                        {
+                            <li class="nav-item">
+                                <a asp-action="Login" asp-controller="Home" class="nav-link">Login</a>
+                            </li>
+                            <li class="nav-item">
+                                <a asp-action="Register" asp-controller="Home" class="nav-link">Register</a>
+                            </li>
+                        }
                     </ul>                    
                     
-                    <button class="btn btn-outline-dark" type="submit">
+                    <a  asp-action="MyCart" asp-controller="Home" class="btn btn-outline-dark" type="submit">
                         <i class="bi-cart-fill me-1"></i>
                         Cart
-                        <span class="badge bg-dark text-white ms-1 rounded-pill">0</span>
-                    </button>
+                        @if(sepet != null){
+                            <span class="badge bg-dark text-white ms-1 rounded-pill">@sepet._myCart.Count</span>
+                        }
+                    </a>
 
                 </div>                
             </div>
