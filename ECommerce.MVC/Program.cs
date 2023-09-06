@@ -4,6 +4,7 @@ using ECommerce.BLL.Concrete;
 using ECommerce.BLL.Services;
 using ECommerce.DAL.Context;
 using ECommerce.IOC.Container;
+using Microsoft.AspNetCore.Identity;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -12,6 +13,10 @@ builder.Services.AddControllersWithViews();
 
 //Database Service
 builder.Services.AddDbContext<ECommerceContext>();
+
+//Identity Service
+//AddEntityFrameworkStores kýsmýný tanýmlamazsak tiplerin nereye ait olacaðýný bilemez. 
+builder.Services.AddIdentity<IdentityUser,IdentityRole>().AddEntityFrameworkStores<ECommerceContext>();
 
 
 ServiceIOC.ServiceConfigure(builder.Services);
@@ -34,6 +39,12 @@ builder.Services.AddScoped<IProductService, ProductService>();
 */
 
 var app = builder.Build();
+
+//Kimlik Doðrulama 
+app.UseAuthentication();
+
+//Yetkilendirme
+app.UseAuthorization();
 
 app.UseRouting();
 
