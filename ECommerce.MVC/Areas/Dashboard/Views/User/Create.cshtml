@@ -35,6 +35,19 @@
                     <input type="password" class="form-control" placeholder="Şifreyı Tekrar Girin" asp-for="ConfirmPassword">
                     <span asp-validation-for="ConfirmPassword"></span>
                 </div>
+                <div class="form-group">
+                    <label>Kullanıcı Rol</label>
+                    <div class="d-flex">
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" checked name="roles" value="User" />
+                            <label>User</label>
+                        </div>
+                        <div class="form-check ml-5">
+                            <input type="checkbox" class="form-check-input " name="roles" value="Admin" />
+                            <label>Admin</label>
+                        </div>
+                    </div>
+                </div>
             </div>
             <!-- /.card-body -->
 

@@ -8,14 +8,31 @@ namespace ECommerce.MVC.Areas.Dashboard.Controllers
     public class UserController : Controller
     {
         private readonly UserManager<IdentityUser> _userManager;
+        private readonly RoleManager<IdentityRole> _roleManager;
 
-        public UserController(UserManager<IdentityUser> userManager)
+        public UserController(UserManager<IdentityUser> userManager, RoleManager<IdentityRole> roleManager)
         {
             _userManager = userManager;
+            _roleManager = roleManager;
         }
         public IActionResult Index()
         {
-            return View(_userManager.Users.ToList()) ;
+            var viewModelUser = new UserVM
+            {
+                Users = _userManager.Users.ToList(),
+                UserRoles = new Dictionary<string, List<string>>()
+            };
+
+            //Bütün kullanıcılarda dönecek. user değerinin roluünü userRole değişkenine aktaracak
+            foreach (var user in viewModelUser.Users)
+            {
+                var userRole=_userManager.GetRolesAsync(user).Result;
+                viewModelUser.UserRoles[user.Id] = userRole.ToList();
+            }
+
+            ViewBag.Roles=_roleManager.Roles.ToList();
+
+            return View(viewModelUser) ;
         }
 
         public IActionResult Create()
@@ -24,7 +41,7 @@ namespace ECommerce.MVC.Areas.Dashboard.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Create(RegisterVM registerVM)
+        public async Task<IActionResult> Create(RegisterVM registerVM,List<string> roles)
         {
             if (ModelState.IsValid)
             {
@@ -35,8 +52,16 @@ namespace ECommerce.MVC.Areas.Dashboard.Controllers
                 };
 
                 var result=await _userManager.CreateAsync(user,registerVM.ConfirmPassword);
+
                 if(result.Succeeded) 
                 {
+                    if (roles.Count>0)
+                    {
+                        foreach (var role in roles)
+                        {
+                            await _userManager.AddToRoleAsync(user, role);
+                        }
+                    }
                     return RedirectToAction("Index");
                 }
             }
