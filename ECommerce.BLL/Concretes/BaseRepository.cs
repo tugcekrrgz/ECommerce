@@ -26,6 +26,7 @@ namespace ECommerce.BLL.Concrete
             try
             {
                 _entities.Add(entity);
+                _context.Entry(entity).State = EntityState.Added;
                 _context.SaveChanges();
                 return "Veri Kaydedildi.";
             }

@@ -21,7 +21,7 @@ namespace ECommerce.Common
                     ip = address.ToString();
                 }
             }
-            return "";
+            return ip;
         }
     }
 }

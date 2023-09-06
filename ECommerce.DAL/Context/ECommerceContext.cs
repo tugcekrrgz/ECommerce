@@ -36,7 +36,7 @@ namespace ECommerce.DAL.Context
             //Veri güncellenirken
 
             //Kaydedilmek üzere gönderilen veriyi temsil ediyor
-            var modifierEntries = ChangeTracker.Entries().Where(x => x.State==EntityState.Modified || x.State==EntityState.Added);
+            var modifierEntries = ChangeTracker.Entries().Where(x => x.State==EntityState.Modified || x.State==EntityState.Added );
             try
             {
                 foreach (var item in modifierEntries)

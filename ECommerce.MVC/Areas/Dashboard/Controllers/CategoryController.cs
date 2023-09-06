@@ -64,13 +64,11 @@ namespace ECommerce.MVC.Areas.Dashboard.Controllers
         {
             if (ModelState.IsValid)
             {
-                var categoryUpdate = new Category
-                {
-                    Id = updated.Id,
-                    CategoryName = updated.CategoryName,
-                    Description = updated.Description,
-                    Status = Entity.Enum.Status.Updated
-                };
+
+                var categoryUpdate = _categoryService.GetById(updated.Id);
+                categoryUpdate.CategoryName = updated.CategoryName;
+                categoryUpdate.Description = updated.Description;
+                categoryUpdate.Status = Entity.Enum.Status.Updated;
 
                 var result = _categoryService.Update(categoryUpdate);
                 TempData["Result"] = result;
