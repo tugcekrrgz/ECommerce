@@ -261,3 +261,8 @@ C:\Users\LENOVO\Desktop\Bilge Adam\MVC\29.08.2023\ECommerce\ECommerce.MVC\obj\De
 C:\Users\LENOVO\Desktop\Bilge Adam\MVC\29.08.2023\ECommerce\ECommerce.MVC\obj\Debug\net7.0\ECommerce.MVC.pdb
 C:\Users\LENOVO\Desktop\Bilge Adam\MVC\29.08.2023\ECommerce\ECommerce.MVC\obj\Debug\net7.0\ECommerce.MVC.genruntimeconfig.cache
 C:\Users\LENOVO\Desktop\Bilge Adam\MVC\29.08.2023\ECommerce\ECommerce.MVC\obj\Debug\net7.0\ref\ECommerce.MVC.dll
+C:\Users\LENOVO\Desktop\Bilge Adam\MVC\29.08.2023\ECommerce\ECommerce.MVC\bin\Debug\net7.0\Bogus.dll
+C:\Users\LENOVO\Desktop\Bilge Adam\MVC\29.08.2023\ECommerce\ECommerce.MVC\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\LENOVO\Desktop\Bilge Adam\MVC\29.08.2023\ECommerce\ECommerce.MVC\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\LENOVO\Desktop\Bilge Adam\MVC\29.08.2023\ECommerce\ECommerce.MVC\bin\Debug\net7.0\Mono.TextTemplating.dll
+C:\Users\LENOVO\Desktop\Bilge Adam\MVC\29.08.2023\ECommerce\ECommerce.MVC\bin\Debug\net7.0\System.CodeDom.dll

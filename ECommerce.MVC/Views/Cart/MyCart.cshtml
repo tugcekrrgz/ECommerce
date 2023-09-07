@@ -26,8 +26,11 @@
                         <th>@item.Value.ProductName</th>
                         <th>@item.Value.UnitPrice</th>
                         <th class="d-flex">
-                            <input type="number" value="@item.Value.Quantity" class="form-control"/>
-                            <button class="btn btn-warning btn-sm ms-3">Güncelle</button>
+                            <form method="post" asp-action="UpdateCart" asp-controller="Cart">
+                                <input type="hidden" name="id" value="@item.Key" />
+                                <input type="number" name="quantity" value="@item.Value.Quantity" class="form-control" />
+                                <button type="submit" class="btn btn-warning btn-sm ms-3  ">Güncelle</button>
+                            </form>
                         </th>
                         <th>
                             @item.Value.SubTotal

@@ -1,4 +1,5 @@
-﻿using ECommerce.Common;
+﻿using Bogus;
+using ECommerce.Common;
 using ECommerce.Entity.Base;
 using ECommerce.Entity.Entity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
@@ -8,16 +9,73 @@ namespace ECommerce.DAL.Context
 {
     public class ECommerceContext:IdentityDbContext
     {
+        
+        public ECommerceContext(DbContextOptions<ECommerceContext> options):base(options)
+        {
+
+        }
+        
         public DbSet<Category> Categories { get; set; }
         public DbSet<Product> Products { get; set; }
 
 
         protected override void OnModelCreating(ModelBuilder builder)
         {
+            //todo: Ayrı bir katmana taşı.
+            //Seed Products and Categories
+
+            //Category
+            var faker = new Faker();
+            var fakerCategories = faker.Commerce.Categories(10);
+
+            var categories=new List<Category>();
+
+            for (int i=0;i<fakerCategories.Length;i++)
+            {
+                Category category = new Category
+                {
+                    Id = i + 1,
+                    CategoryName = fakerCategories[i],
+                    Description = $"{fakerCategories[i]} description.",
+                };
+                categories.Add(category);
+            }
+
+            //Örnek veriler tabloya dahil edildi.
+            builder.Entity<Category>().HasData(categories);
+
+            //Product
+
+            int idCounter = 1;
+            var products=new List<Product>();
+
+            for (int i=0;i<categories.Count;i++)
+            {
+                for (int t=0;t<10;t++)
+                {
+                    Product product = new Product()
+                    {
+                        Id = idCounter,
+                        CategoryId = categories[i].Id,
+                        ProductName = faker.Commerce.ProductName(),
+                        Description = faker.Commerce.ProductAdjective(),
+                        UnitPrice = decimal.Parse(faker.Commerce.Price()),
+                        UnitsInStock = faker.Random.Short(0, 10001),
+                    };
+
+                    products.Add(product);
+                    idCounter++;
+                }
+            }
+
+            builder.Entity<Product>().HasData(products);
+
+
+
             base.OnModelCreating(builder);
         }
 
-
+        /*
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             if (!optionsBuilder.IsConfigured)
@@ -27,6 +85,7 @@ namespace ECommerce.DAL.Context
 
             base.OnConfiguring(optionsBuilder);
         }
+        */
 
         public override int SaveChanges()
         {

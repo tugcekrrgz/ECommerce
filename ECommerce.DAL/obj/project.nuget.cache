@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "LBWk07uA2a0sxR3lxVYE+WGu6fjE7iA8fMkm+dFTo3hHPob95vPOcxnaVOLsXE9NXHyxuLW1afONBoOe2eqHYA==",
+  "dgSpecHash": "1xQPybInZQwKdPGQeSW4n9CRHDcZqSYpvGTAvf9X87Ji5Qtodemw15EsFWLKJzD8dOvOycWprZStoqd1F7x7Ug==",
   "success": true,
   "projectFilePath": "C:\\Users\\LENOVO\\Desktop\\Bilge Adam\\MVC\\29.08.2023\\ECommerce\\ECommerce.DAL\\ECommerce.DAL.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\LENOVO\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\LENOVO\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
+    "C:\\Users\\LENOVO\\.nuget\\packages\\bogus\\34.0.2\\bogus.34.0.2.nupkg.sha512",
     "C:\\Users\\LENOVO\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\LENOVO\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\7.0.10\\microsoft.aspnetcore.cryptography.internal.7.0.10.nupkg.sha512",
     "C:\\Users\\LENOVO\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\7.0.10\\microsoft.aspnetcore.cryptography.keyderivation.7.0.10.nupkg.sha512",

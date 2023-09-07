@@ -13,6 +13,8 @@
         }
         */
 
+        //todo: ICart oluştur abstract service de ve sonra car concrete oluştur.
+
         public Dictionary<int,CartItem> _myCart=new Dictionary<int,CartItem>();
         public void AddItem(CartItem cartItem)
         {
@@ -22,6 +24,15 @@
                 return;
             }
             _myCart.Add(cartItem.Id,cartItem);
+        }
+
+        public void UpdateItem(int key, short quantity)
+        {
+            if (_myCart.ContainsKey(key))
+            {
+                _myCart[key].Quantity = quantity;
+                return;
+            }
         }
     }
 }

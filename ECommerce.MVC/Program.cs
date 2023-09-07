@@ -5,6 +5,7 @@ using ECommerce.BLL.Services;
 using ECommerce.DAL.Context;
 using ECommerce.IOC.Container;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -12,7 +13,9 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 
 //Database Service
-builder.Services.AddDbContext<ECommerceContext>();
+//builder.Services.AddDbContext<ECommerceContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+
+builder.Services.AddDbContext<ECommerceContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"), b => b.MigrationsAssembly("ECommerce.MVC")));
 
 //Identity Service
 //AddEntityFrameworkStores kýsmýný tanýmlamazsak tiplerin nereye ait olacaðýný bilemez. 
@@ -54,7 +57,7 @@ builder.Services.ConfigureApplicationCookie(x =>
         Name = "ecommerce_cookie"
     };
     x.SlidingExpiration = true;
-    x.ExpireTimeSpan = TimeSpan.FromMinutes(1);
+    x.ExpireTimeSpan = TimeSpan.FromMinutes(10);
 });
 
 

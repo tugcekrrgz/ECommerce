@@ -32,7 +32,6 @@ namespace ECommerce.MVC.Controllers
             return View(products);
         }
 
-
         public IActionResult Login()
         {
             return View();
@@ -127,50 +126,7 @@ namespace ECommerce.MVC.Controllers
             return RedirectToAction("Index");
         }
 
-        public IActionResult AddToCard(int id)
-        {
-            var product=_productService.GetById(id);
-            if(product != null)
-            {
-                Cart cartSession;
-
-                if (SessionHelper.GetProductFromJson<Cart>(HttpContext.Session,"sepet") == null)
-                {
-                    cartSession = new Cart();
-
-                }
-                else
-                {
-                    cartSession = SessionHelper.GetProductFromJson<Cart>(HttpContext.Session, "sepet");
-                }
-
-                CartItem cartItem = new CartItem();
-                cartItem.Id = product.Id;
-                cartItem.ProductName = product.ProductName;
-                cartItem.UnitPrice= product.UnitPrice;
-
-                cartSession.AddItem(cartItem);
-                SessionHelper.SetJsonProduct(HttpContext.Session,"sepet",cartSession);
-
-
-                return RedirectToAction("Index");                
-            }
-            return RedirectToAction("Index");            
-        }
-
-
-        public IActionResult MyCart()
-        {
-            if (User.Identity.IsAuthenticated)
-            {
-
-                return View();
-            }
-            else
-            {
-                return RedirectToAction("Login");
-            }
-        }
+        
 
 
 
