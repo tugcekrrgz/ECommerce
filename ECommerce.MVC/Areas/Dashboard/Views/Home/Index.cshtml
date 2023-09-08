@@ -120,7 +120,12 @@
                                                 }
                                             }
                                             <td>@subTotal</td>
-                                            <td></td>
+                                            <td>
+                                                <a class="btn btn-success btn-sm" asp-action="ShipperDetail" asp-controller="Shipper">Kargo Bilgileri</a>
+                                            </td>
+                                            <td>
+                                                <a class="btn btn-danger btn-sm" asp-action="Details" asp-controller="Order" asp-route-id="@order.Id">Sipariş Detayları</a>
+                                            </td>
                                         </tr>
                                     }
                                 </tbody>
