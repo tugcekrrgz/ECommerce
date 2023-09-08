@@ -28,5 +28,10 @@ namespace ECommerce.MVC.Utils
                 return deserialize;
             }
         }
+
+        public static void RemoveSession(ISession session,string key)
+        {
+            session.Remove(key);
+        }
     }
 }

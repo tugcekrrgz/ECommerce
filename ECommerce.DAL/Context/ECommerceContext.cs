@@ -17,10 +17,47 @@ namespace ECommerce.DAL.Context
         
         public DbSet<Category> Categories { get; set; }
         public DbSet<Product> Products { get; set; }
+        public DbSet<Order> Orders { get; set; }
+        public DbSet<OrderDetail> OrderDetails { get; set; }
+        public DbSet<Shipper> Shippers { get; set; }
 
 
         protected override void OnModelCreating(ModelBuilder builder)
         {
+            //Fluent API olarak adlandırılıyor.
+            //Order Detail Mapping
+            builder.Entity<OrderDetail>().Ignore(x => x.Id);
+            builder.Entity<OrderDetail>().HasKey(x => new {x.ProductId, x.OrderId});
+
+            //Category and product mapping
+            builder.Entity<Category>()
+                .HasMany(x => x.Products)
+                .WithOne(x => x.Category)
+                .HasForeignKey(x => x.CategoryId);
+
+            //Product and order detail mapping
+            builder.Entity<Product>()
+                .HasMany(x => x.OrderDetails)
+                .WithOne(x => x.Product)
+                .HasForeignKey(x => x.ProductId);
+
+            //Order and order detail mapping
+            builder.Entity<Order>()
+                .HasMany(x => x.OrderDetails)
+                .WithOne(x => x.Order)
+                .HasForeignKey( x=> x.OrderId);
+
+            //Order and shipper mapping
+            builder.Entity<Shipper>()
+                .HasMany(x => x.Orders)
+                .WithOne(x => x.Shipper)
+                .HasForeignKey(x => x.ShipperId);
+
+            builder.Entity<Order>().Property(x => x.ShipperId).IsRequired(false);
+
+
+
+
             //todo: Ayrı bir katmana taşı.
             //Seed Products and Categories
 

@@ -16,8 +16,10 @@ namespace ECommerce.IOC.Container
             //Supplier Service
 
             //Order Service
+            services.AddScoped<IOrderService, OrderService>();
 
             //OrderDetail Service
+            services.AddScoped<IOrderDetailService, OrderDetailService>();
         }
     }
 }

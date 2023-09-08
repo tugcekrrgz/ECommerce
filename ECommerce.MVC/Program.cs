@@ -44,7 +44,7 @@ builder.Services.AddScoped<IProductService, ProductService>();
 
 builder.Services.AddSession(x => {
     x.Cookie.Name = "ECommerce_Cart_Session";
-    x.IdleTimeout=TimeSpan.FromMinutes(1);
+    x.IdleTimeout=TimeSpan.FromMinutes(10);
 });
 
 

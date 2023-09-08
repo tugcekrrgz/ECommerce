@@ -1,0 +1,25 @@
+﻿@model Order
+
+@{
+    ViewData["Title"] = "Confirmation";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container">
+    <div class="col-md-6">
+        <div class="row">
+            <div class="card">
+                <div class="card-body">
+                    <h1>Sipariniz oluşturuldu. Lütfen mail adresinizi kontrol edin.</h1>
+                    <h2>Sipariş Numarası : @Model.Id</h2>
+                    @*@foreach (var item in Model.OrderDetails)
+                    {
+                        <p>@item.Product</p>
+                        <p></p>
+                    }*@
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

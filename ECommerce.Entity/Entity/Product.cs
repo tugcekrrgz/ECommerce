@@ -18,13 +18,8 @@ namespace ECommerce.Entity.Entity
 
         //Mapping
         public int CategoryId { get; set; }
+        public List<OrderDetail> OrderDetails { get; set; }
         public virtual Category Category { get; set; }
 
-        //CrratedDate
-        //CreatedComputerName
-        //CreatedIpAddress
-        //UpdatedDate
-        //UpdatedComputerName
-        //UpdatedIpAddress
     }
 }

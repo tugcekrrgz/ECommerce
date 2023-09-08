@@ -72,113 +72,208 @@ namespace ECommerce.MVC.Migrations
                         new
                         {
                             Id = 1,
-                            CategoryName = "Electronics",
+                            CategoryName = "Grocery",
                             CreatedComputerName = "DESKTOP-I9V1GOS",
-                            CreatedDate = new DateTime(2023, 9, 7, 11, 8, 19, 676, DateTimeKind.Local).AddTicks(9997),
+                            CreatedDate = new DateTime(2023, 9, 8, 14, 45, 26, 455, DateTimeKind.Local).AddTicks(2990),
                             CreatedIpAddress = "192.161.1.1",
-                            Description = "Electronics description.",
-                            MasterID = new Guid("91974cce-d4e4-4c53-998a-19fdc549603c"),
+                            Description = "Grocery description.",
+                            MasterID = new Guid("b903af20-655d-45e2-b358-214c4c0ecafe"),
                             Status = 0
                         },
                         new
                         {
                             Id = 2,
-                            CategoryName = "Beauty",
+                            CategoryName = "Kids",
                             CreatedComputerName = "DESKTOP-I9V1GOS",
-                            CreatedDate = new DateTime(2023, 9, 7, 11, 8, 19, 677, DateTimeKind.Local).AddTicks(76),
+                            CreatedDate = new DateTime(2023, 9, 8, 14, 45, 26, 455, DateTimeKind.Local).AddTicks(3083),
                             CreatedIpAddress = "192.161.1.1",
-                            Description = "Beauty description.",
-                            MasterID = new Guid("729db11a-dd62-42d4-9b2a-75bd3a0e2c84"),
+                            Description = "Kids description.",
+                            MasterID = new Guid("983d961c-2757-4f24-b3ea-de904971e159"),
                             Status = 0
                         },
                         new
                         {
                             Id = 3,
-                            CategoryName = "Automotive",
+                            CategoryName = "Outdoors",
                             CreatedComputerName = "DESKTOP-I9V1GOS",
-                            CreatedDate = new DateTime(2023, 9, 7, 11, 8, 19, 677, DateTimeKind.Local).AddTicks(79),
+                            CreatedDate = new DateTime(2023, 9, 8, 14, 45, 26, 455, DateTimeKind.Local).AddTicks(3087),
                             CreatedIpAddress = "192.161.1.1",
-                            Description = "Automotive description.",
-                            MasterID = new Guid("2e77a78c-647c-4ba0-b56e-e590a7b9b669"),
+                            Description = "Outdoors description.",
+                            MasterID = new Guid("4bec5146-ef76-4b26-84cf-a165d3169009"),
                             Status = 0
                         },
                         new
                         {
                             Id = 4,
-                            CategoryName = "Home",
+                            CategoryName = "Toys",
                             CreatedComputerName = "DESKTOP-I9V1GOS",
-                            CreatedDate = new DateTime(2023, 9, 7, 11, 8, 19, 677, DateTimeKind.Local).AddTicks(82),
+                            CreatedDate = new DateTime(2023, 9, 8, 14, 45, 26, 455, DateTimeKind.Local).AddTicks(3105),
                             CreatedIpAddress = "192.161.1.1",
-                            Description = "Home description.",
-                            MasterID = new Guid("c50b5a7b-27ab-4adc-8cc1-5b3b0b9e53c3"),
+                            Description = "Toys description.",
+                            MasterID = new Guid("5fc57a7c-cf80-468a-9a8e-ae86dffeed77"),
                             Status = 0
                         },
                         new
                         {
                             Id = 5,
-                            CategoryName = "Books",
+                            CategoryName = "Health",
                             CreatedComputerName = "DESKTOP-I9V1GOS",
-                            CreatedDate = new DateTime(2023, 9, 7, 11, 8, 19, 677, DateTimeKind.Local).AddTicks(84),
+                            CreatedDate = new DateTime(2023, 9, 8, 14, 45, 26, 455, DateTimeKind.Local).AddTicks(3108),
                             CreatedIpAddress = "192.161.1.1",
-                            Description = "Books description.",
-                            MasterID = new Guid("5e35f5e8-e363-443d-bdfb-19c66a70c81e"),
+                            Description = "Health description.",
+                            MasterID = new Guid("98239a81-2884-4ae2-ac93-3f6473e7384d"),
                             Status = 0
                         },
                         new
                         {
                             Id = 6,
-                            CategoryName = "Computers",
+                            CategoryName = "Garden",
                             CreatedComputerName = "DESKTOP-I9V1GOS",
-                            CreatedDate = new DateTime(2023, 9, 7, 11, 8, 19, 677, DateTimeKind.Local).AddTicks(109),
+                            CreatedDate = new DateTime(2023, 9, 8, 14, 45, 26, 455, DateTimeKind.Local).AddTicks(3113),
                             CreatedIpAddress = "192.161.1.1",
-                            Description = "Computers description.",
-                            MasterID = new Guid("70c9d09b-6126-4764-ac0f-fb4549cc2af6"),
+                            Description = "Garden description.",
+                            MasterID = new Guid("80a85e92-56ed-4898-85c2-4961e78da2ba"),
                             Status = 0
                         },
                         new
                         {
                             Id = 7,
-                            CategoryName = "Outdoors",
+                            CategoryName = "Games",
                             CreatedComputerName = "DESKTOP-I9V1GOS",
-                            CreatedDate = new DateTime(2023, 9, 7, 11, 8, 19, 677, DateTimeKind.Local).AddTicks(112),
+                            CreatedDate = new DateTime(2023, 9, 8, 14, 45, 26, 455, DateTimeKind.Local).AddTicks(3116),
                             CreatedIpAddress = "192.161.1.1",
-                            Description = "Outdoors description.",
-                            MasterID = new Guid("6bf0cc03-1296-4dd6-a844-28dd78cca9fe"),
+                            Description = "Games description.",
+                            MasterID = new Guid("d7feee28-7004-46c2-8e61-f216885f3167"),
                             Status = 0
                         },
                         new
                         {
                             Id = 8,
-                            CategoryName = "Beauty",
+                            CategoryName = "Health",
                             CreatedComputerName = "DESKTOP-I9V1GOS",
-                            CreatedDate = new DateTime(2023, 9, 7, 11, 8, 19, 677, DateTimeKind.Local).AddTicks(115),
+                            CreatedDate = new DateTime(2023, 9, 8, 14, 45, 26, 455, DateTimeKind.Local).AddTicks(3119),
                             CreatedIpAddress = "192.161.1.1",
-                            Description = "Beauty description.",
-                            MasterID = new Guid("89e991b5-326d-4d7e-a403-1e4377c230a3"),
+                            Description = "Health description.",
+                            MasterID = new Guid("1f2344c5-f21e-4012-b776-26f1f1ac39c3"),
                             Status = 0
                         },
                         new
                         {
                             Id = 9,
-                            CategoryName = "Tools",
+                            CategoryName = "Grocery",
                             CreatedComputerName = "DESKTOP-I9V1GOS",
-                            CreatedDate = new DateTime(2023, 9, 7, 11, 8, 19, 677, DateTimeKind.Local).AddTicks(127),
+                            CreatedDate = new DateTime(2023, 9, 8, 14, 45, 26, 455, DateTimeKind.Local).AddTicks(3123),
                             CreatedIpAddress = "192.161.1.1",
-                            Description = "Tools description.",
-                            MasterID = new Guid("c0ea52ea-5407-41b5-8b1a-1cb03b438d58"),
+                            Description = "Grocery description.",
+                            MasterID = new Guid("435f99c0-1bfa-4630-8cb7-0d66844c7c92"),
                             Status = 0
                         },
                         new
                         {
                             Id = 10,
-                            CategoryName = "Shoes",
+                            CategoryName = "Toys",
                             CreatedComputerName = "DESKTOP-I9V1GOS",
-                            CreatedDate = new DateTime(2023, 9, 7, 11, 8, 19, 677, DateTimeKind.Local).AddTicks(131),
+                            CreatedDate = new DateTime(2023, 9, 8, 14, 45, 26, 455, DateTimeKind.Local).AddTicks(3127),
                             CreatedIpAddress = "192.161.1.1",
-                            Description = "Shoes description.",
-                            MasterID = new Guid("de5db860-a040-4570-a2b8-6da251c679c7"),
+                            Description = "Toys description.",
+                            MasterID = new Guid("0e2fb57e-ea71-4ed5-991a-a2a1b39962d6"),
                             Status = 0
                         });
+                });
+
+            modelBuilder.Entity("ECommerce.Entity.Entity.Order", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("CreatedComputerName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("CreatedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("CreatedIpAddress")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<Guid>("MasterID")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime?>("ShippedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int?>("ShipperId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Status")
+                        .HasColumnType("int");
+
+                    b.Property<string>("UpdatedComputerName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime?>("UpdatedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("UpdatedIpAddress")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("UserId")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ShipperId");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("Orders");
+                });
+
+            modelBuilder.Entity("ECommerce.Entity.Entity.OrderDetail", b =>
+                {
+                    b.Property<int>("ProductId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("OrderId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("CreatedComputerName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("CreatedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("CreatedIpAddress")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<Guid>("MasterID")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<int>("Quantity")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Status")
+                        .HasColumnType("int");
+
+                    b.Property<decimal?>("UnitPrice")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<string>("UpdatedComputerName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime?>("UpdatedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("UpdatedIpAddress")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("ProductId", "OrderId");
+
+                    b.HasIndex("OrderId");
+
+                    b.ToTable("OrderDetails");
                 });
 
             modelBuilder.Entity("ECommerce.Entity.Entity.Product", b =>
@@ -247,1401 +342,1450 @@ namespace ECommerce.MVC.Migrations
                             Id = 1,
                             CategoryId = 1,
                             CreatedComputerName = "DESKTOP-I9V1GOS",
-                            CreatedDate = new DateTime(2023, 9, 7, 11, 8, 19, 677, DateTimeKind.Local).AddTicks(268),
+                            CreatedDate = new DateTime(2023, 9, 8, 14, 45, 26, 455, DateTimeKind.Local).AddTicks(3406),
                             CreatedIpAddress = "192.161.1.1",
-                            Description = "Refined",
-                            MasterID = new Guid("b863c4aa-2e7e-46db-9a37-4fb111e9d2b6"),
-                            ProductName = "Incredible Fresh Gloves",
+                            Description = "Tasty",
+                            MasterID = new Guid("04853fc0-fc1c-4069-9fe4-d610c1e84020"),
+                            ProductName = "Sleek Cotton Shoes",
                             Status = 0,
-                            UnitPrice = 776.26m,
-                            UnitsInStock = (short)6521
+                            UnitPrice = 490.70m,
+                            UnitsInStock = (short)8119
                         },
                         new
                         {
                             Id = 2,
                             CategoryId = 1,
                             CreatedComputerName = "DESKTOP-I9V1GOS",
-                            CreatedDate = new DateTime(2023, 9, 7, 11, 8, 19, 677, DateTimeKind.Local).AddTicks(406),
+                            CreatedDate = new DateTime(2023, 9, 8, 14, 45, 26, 455, DateTimeKind.Local).AddTicks(3642),
                             CreatedIpAddress = "192.161.1.1",
-                            Description = "Handcrafted",
-                            MasterID = new Guid("4e659864-497c-44c2-a190-90433fbb46fb"),
-                            ProductName = "Unbranded Granite Bike",
+                            Description = "Tasty",
+                            MasterID = new Guid("dcf12953-069c-49bd-ab74-6064015bf09f"),
+                            ProductName = "Handcrafted Fresh Sausages",
                             Status = 0,
-                            UnitPrice = 869.47m,
-                            UnitsInStock = (short)9953
+                            UnitPrice = 483.59m,
+                            UnitsInStock = (short)6274
                         },
                         new
                         {
                             Id = 3,
                             CategoryId = 1,
                             CreatedComputerName = "DESKTOP-I9V1GOS",
-                            CreatedDate = new DateTime(2023, 9, 7, 11, 8, 19, 677, DateTimeKind.Local).AddTicks(431),
+                            CreatedDate = new DateTime(2023, 9, 8, 14, 45, 26, 455, DateTimeKind.Local).AddTicks(3679),
                             CreatedIpAddress = "192.161.1.1",
-                            Description = "Ergonomic",
-                            MasterID = new Guid("6c09b794-d9a3-4a5c-a240-5206d9bd1fa3"),
-                            ProductName = "Handcrafted Soft Soap",
+                            Description = "Intelligent",
+                            MasterID = new Guid("1f00c2e0-0967-4aa8-80f2-ec5326dd9e72"),
+                            ProductName = "Licensed Wooden Fish",
                             Status = 0,
-                            UnitPrice = 615.85m,
-                            UnitsInStock = (short)1512
+                            UnitPrice = 107.60m,
+                            UnitsInStock = (short)1233
                         },
                         new
                         {
                             Id = 4,
                             CategoryId = 1,
                             CreatedComputerName = "DESKTOP-I9V1GOS",
-                            CreatedDate = new DateTime(2023, 9, 7, 11, 8, 19, 677, DateTimeKind.Local).AddTicks(452),
+                            CreatedDate = new DateTime(2023, 9, 8, 14, 45, 26, 455, DateTimeKind.Local).AddTicks(3709),
                             CreatedIpAddress = "192.161.1.1",
-                            Description = "Intelligent",
-                            MasterID = new Guid("5e45de56-f4cd-4cc7-9676-b26b714fa860"),
-                            ProductName = "Awesome Plastic Gloves",
+                            Description = "Tasty",
+                            MasterID = new Guid("fe2f3237-f729-494c-b8e6-776b5f836dfd"),
+                            ProductName = "Intelligent Cotton Shirt",
                             Status = 0,
-                            UnitPrice = 312.61m,
-                            UnitsInStock = (short)2918
+                            UnitPrice = 77.98m,
+                            UnitsInStock = (short)3098
                         },
                         new
                         {
                             Id = 5,
                             CategoryId = 1,
                             CreatedComputerName = "DESKTOP-I9V1GOS",
-                            CreatedDate = new DateTime(2023, 9, 7, 11, 8, 19, 677, DateTimeKind.Local).AddTicks(471),
+                            CreatedDate = new DateTime(2023, 9, 8, 14, 45, 26, 455, DateTimeKind.Local).AddTicks(3736),
                             CreatedIpAddress = "192.161.1.1",
-                            Description = "Small",
-                            MasterID = new Guid("d094f0fd-6573-4d11-8552-13b0fa28c210"),
-                            ProductName = "Fantastic Steel Shoes",
+                            Description = "Intelligent",
+                            MasterID = new Guid("8d658134-c8df-4c54-991a-4163bdecf26f"),
+                            ProductName = "Small Wooden Ball",
                             Status = 0,
-                            UnitPrice = 15.51m,
-                            UnitsInStock = (short)6010
+                            UnitPrice = 53.43m,
+                            UnitsInStock = (short)9302
                         },
                         new
                         {
                             Id = 6,
                             CategoryId = 1,
                             CreatedComputerName = "DESKTOP-I9V1GOS",
-                            CreatedDate = new DateTime(2023, 9, 7, 11, 8, 19, 677, DateTimeKind.Local).AddTicks(491),
+                            CreatedDate = new DateTime(2023, 9, 8, 14, 45, 26, 455, DateTimeKind.Local).AddTicks(3766),
                             CreatedIpAddress = "192.161.1.1",
-                            Description = "Fantastic",
-                            MasterID = new Guid("25508abb-aea9-41b1-bb9f-6d110ee3398e"),
-                            ProductName = "Small Metal Chicken",
+                            Description = "Incredible",
+                            MasterID = new Guid("de7921c2-e92b-4419-b229-ee006ae262cb"),
+                            ProductName = "Handcrafted Granite Tuna",
                             Status = 0,
-                            UnitPrice = 301.64m,
-                            UnitsInStock = (short)1418
+                            UnitPrice = 63.66m,
+                            UnitsInStock = (short)2006
                         },
                         new
                         {
                             Id = 7,
                             CategoryId = 1,
                             CreatedComputerName = "DESKTOP-I9V1GOS",
-                            CreatedDate = new DateTime(2023, 9, 7, 11, 8, 19, 677, DateTimeKind.Local).AddTicks(513),
+                            CreatedDate = new DateTime(2023, 9, 8, 14, 45, 26, 455, DateTimeKind.Local).AddTicks(3797),
                             CreatedIpAddress = "192.161.1.1",
-                            Description = "Tasty",
-                            MasterID = new Guid("791b6722-266e-4e6d-ac1c-7ce34246abce"),
-                            ProductName = "Gorgeous Frozen Ball",
+                            Description = "Practical",
+                            MasterID = new Guid("5358d47a-489c-4e04-a38a-d83c28b1b329"),
+                            ProductName = "Gorgeous Steel Pizza",
                             Status = 0,
-                            UnitPrice = 465.24m,
-                            UnitsInStock = (short)6521
+                            UnitPrice = 346.92m,
+                            UnitsInStock = (short)1738
                         },
                         new
                         {
                             Id = 8,
                             CategoryId = 1,
                             CreatedComputerName = "DESKTOP-I9V1GOS",
-                            CreatedDate = new DateTime(2023, 9, 7, 11, 8, 19, 677, DateTimeKind.Local).AddTicks(532),
+                            CreatedDate = new DateTime(2023, 9, 8, 14, 45, 26, 455, DateTimeKind.Local).AddTicks(3824),
                             CreatedIpAddress = "192.161.1.1",
-                            Description = "Practical",
-                            MasterID = new Guid("359abf6c-9773-4afd-9dbd-3c05edd028bb"),
-                            ProductName = "Generic Rubber Computer",
+                            Description = "Generic",
+                            MasterID = new Guid("9143e3e9-6984-4b27-b705-f8ced44bf3f8"),
+                            ProductName = "Tasty Cotton Shirt",
                             Status = 0,
-                            UnitPrice = 102.46m,
-                            UnitsInStock = (short)1070
+                            UnitPrice = 689.78m,
+                            UnitsInStock = (short)8059
                         },
                         new
                         {
                             Id = 9,
                             CategoryId = 1,
                             CreatedComputerName = "DESKTOP-I9V1GOS",
-                            CreatedDate = new DateTime(2023, 9, 7, 11, 8, 19, 677, DateTimeKind.Local).AddTicks(575),
+                            CreatedDate = new DateTime(2023, 9, 8, 14, 45, 26, 455, DateTimeKind.Local).AddTicks(3853),
                             CreatedIpAddress = "192.161.1.1",
-                            Description = "Fantastic",
-                            MasterID = new Guid("4b5f1ad9-c645-4a0f-9f9c-d146b5de3436"),
-                            ProductName = "Practical Fresh Cheese",
+                            Description = "Handcrafted",
+                            MasterID = new Guid("02d818e6-1d79-4a1f-b983-6f6625882e7a"),
+                            ProductName = "Licensed Cotton Pizza",
                             Status = 0,
-                            UnitPrice = 435.32m,
-                            UnitsInStock = (short)917
+                            UnitPrice = 876.32m,
+                            UnitsInStock = (short)2993
                         },
                         new
                         {
                             Id = 10,
                             CategoryId = 1,
                             CreatedComputerName = "DESKTOP-I9V1GOS",
-                            CreatedDate = new DateTime(2023, 9, 7, 11, 8, 19, 677, DateTimeKind.Local).AddTicks(595),
+                            CreatedDate = new DateTime(2023, 9, 8, 14, 45, 26, 455, DateTimeKind.Local).AddTicks(3937),
                             CreatedIpAddress = "192.161.1.1",
-                            Description = "Generic",
-                            MasterID = new Guid("53dc2a42-c820-4fd4-b7e2-b2b4a54a7de2"),
-                            ProductName = "Licensed Cotton Tuna",
+                            Description = "Intelligent",
+                            MasterID = new Guid("35342e13-17c0-4418-95c4-9ae5b5f3f694"),
+                            ProductName = "Refined Soft Keyboard",
                             Status = 0,
-                            UnitPrice = 318.83m,
-                            UnitsInStock = (short)8919
+                            UnitPrice = 30.34m,
+                            UnitsInStock = (short)7017
                         },
                         new
                         {
                             Id = 11,
                             CategoryId = 2,
                             CreatedComputerName = "DESKTOP-I9V1GOS",
-                            CreatedDate = new DateTime(2023, 9, 7, 11, 8, 19, 677, DateTimeKind.Local).AddTicks(614),
+                            CreatedDate = new DateTime(2023, 9, 8, 14, 45, 26, 455, DateTimeKind.Local).AddTicks(3968),
                             CreatedIpAddress = "192.161.1.1",
-                            Description = "Refined",
-                            MasterID = new Guid("ecd3b773-06f5-45f4-996e-427a44fc1433"),
-                            ProductName = "Ergonomic Frozen Towels",
+                            Description = "Tasty",
+                            MasterID = new Guid("c9a56a22-4fde-4119-aad1-cdd11d9dc4d2"),
+                            ProductName = "Fantastic Plastic Hat",
                             Status = 0,
-                            UnitPrice = 587.57m,
-                            UnitsInStock = (short)5999
+                            UnitPrice = 230.00m,
+                            UnitsInStock = (short)8003
                         },
                         new
                         {
                             Id = 12,
                             CategoryId = 2,
                             CreatedComputerName = "DESKTOP-I9V1GOS",
-                            CreatedDate = new DateTime(2023, 9, 7, 11, 8, 19, 677, DateTimeKind.Local).AddTicks(632),
+                            CreatedDate = new DateTime(2023, 9, 8, 14, 45, 26, 455, DateTimeKind.Local).AddTicks(3996),
                             CreatedIpAddress = "192.161.1.1",
-                            Description = "Handmade",
-                            MasterID = new Guid("c4723e37-e502-4ae6-bd6a-91c0ebfb09fb"),
-                            ProductName = "Tasty Granite Computer",
+                            Description = "Practical",
+                            MasterID = new Guid("cd0abea5-f86c-4500-826e-2fc60912f432"),
+                            ProductName = "Tasty Steel Chips",
                             Status = 0,
-                            UnitPrice = 479.78m,
-                            UnitsInStock = (short)3610
+                            UnitPrice = 415.16m,
+                            UnitsInStock = (short)3662
                         },
                         new
                         {
                             Id = 13,
                             CategoryId = 2,
                             CreatedComputerName = "DESKTOP-I9V1GOS",
-                            CreatedDate = new DateTime(2023, 9, 7, 11, 8, 19, 677, DateTimeKind.Local).AddTicks(648),
+                            CreatedDate = new DateTime(2023, 9, 8, 14, 45, 26, 455, DateTimeKind.Local).AddTicks(4027),
                             CreatedIpAddress = "192.161.1.1",
-                            Description = "Refined",
-                            MasterID = new Guid("bffdc0ce-1420-4646-b571-f38ec675c70a"),
-                            ProductName = "Rustic Concrete Chicken",
+                            Description = "Small",
+                            MasterID = new Guid("27959f02-a2a9-4f85-91cf-96241b574a8b"),
+                            ProductName = "Handmade Wooden Cheese",
                             Status = 0,
-                            UnitPrice = 331.63m,
-                            UnitsInStock = (short)8599
+                            UnitPrice = 523.16m,
+                            UnitsInStock = (short)6984
                         },
                         new
                         {
                             Id = 14,
                             CategoryId = 2,
                             CreatedComputerName = "DESKTOP-I9V1GOS",
-                            CreatedDate = new DateTime(2023, 9, 7, 11, 8, 19, 677, DateTimeKind.Local).AddTicks(665),
+                            CreatedDate = new DateTime(2023, 9, 8, 14, 45, 26, 455, DateTimeKind.Local).AddTicks(4053),
                             CreatedIpAddress = "192.161.1.1",
-                            Description = "Sleek",
-                            MasterID = new Guid("aeb8d450-ba46-4c42-8ec7-77cc453822af"),
-                            ProductName = "Awesome Plastic Towels",
+                            Description = "Unbranded",
+                            MasterID = new Guid("7424d3c0-9817-445d-bf53-7f18537e9792"),
+                            ProductName = "Tasty Concrete Gloves",
                             Status = 0,
-                            UnitPrice = 938.53m,
-                            UnitsInStock = (short)78
+                            UnitPrice = 732.45m,
+                            UnitsInStock = (short)2205
                         },
                         new
                         {
                             Id = 15,
                             CategoryId = 2,
                             CreatedComputerName = "DESKTOP-I9V1GOS",
-                            CreatedDate = new DateTime(2023, 9, 7, 11, 8, 19, 677, DateTimeKind.Local).AddTicks(684),
+                            CreatedDate = new DateTime(2023, 9, 8, 14, 45, 26, 455, DateTimeKind.Local).AddTicks(4080),
                             CreatedIpAddress = "192.161.1.1",
-                            Description = "Gorgeous",
-                            MasterID = new Guid("748d3b77-48a2-435a-8301-80c4212e117f"),
-                            ProductName = "Incredible Metal Hat",
+                            Description = "Tasty",
+                            MasterID = new Guid("91644ffd-0db2-4621-9cd2-e8e80bfe3a31"),
+                            ProductName = "Ergonomic Rubber Hat",
                             Status = 0,
-                            UnitPrice = 628.01m,
-                            UnitsInStock = (short)8345
+                            UnitPrice = 666.79m,
+                            UnitsInStock = (short)1478
                         },
                         new
                         {
                             Id = 16,
                             CategoryId = 2,
                             CreatedComputerName = "DESKTOP-I9V1GOS",
-                            CreatedDate = new DateTime(2023, 9, 7, 11, 8, 19, 677, DateTimeKind.Local).AddTicks(702),
+                            CreatedDate = new DateTime(2023, 9, 8, 14, 45, 26, 455, DateTimeKind.Local).AddTicks(4110),
                             CreatedIpAddress = "192.161.1.1",
-                            Description = "Sleek",
-                            MasterID = new Guid("eedc45b3-9a50-431d-85e0-33350d61426e"),
-                            ProductName = "Practical Metal Tuna",
+                            Description = "Unbranded",
+                            MasterID = new Guid("9df29e0d-8b84-4b71-8215-2bf43fe5d146"),
+                            ProductName = "Practical Cotton Bike",
                             Status = 0,
-                            UnitPrice = 31.27m,
-                            UnitsInStock = (short)2028
+                            UnitPrice = 849.07m,
+                            UnitsInStock = (short)7424
                         },
                         new
                         {
                             Id = 17,
                             CategoryId = 2,
                             CreatedComputerName = "DESKTOP-I9V1GOS",
-                            CreatedDate = new DateTime(2023, 9, 7, 11, 8, 19, 677, DateTimeKind.Local).AddTicks(719),
+                            CreatedDate = new DateTime(2023, 9, 8, 14, 45, 26, 455, DateTimeKind.Local).AddTicks(4137),
                             CreatedIpAddress = "192.161.1.1",
-                            Description = "Handcrafted",
-                            MasterID = new Guid("21c717d6-33d4-4866-82ee-17c2577e2e9e"),
-                            ProductName = "Sleek Rubber Chair",
+                            Description = "Intelligent",
+                            MasterID = new Guid("d7c376a9-cd1f-4670-a2c1-5955e35e3448"),
+                            ProductName = "Rustic Wooden Car",
                             Status = 0,
-                            UnitPrice = 976.48m,
-                            UnitsInStock = (short)5344
+                            UnitPrice = 188.58m,
+                            UnitsInStock = (short)9396
                         },
                         new
                         {
                             Id = 18,
                             CategoryId = 2,
                             CreatedComputerName = "DESKTOP-I9V1GOS",
-                            CreatedDate = new DateTime(2023, 9, 7, 11, 8, 19, 677, DateTimeKind.Local).AddTicks(759),
+                            CreatedDate = new DateTime(2023, 9, 8, 14, 45, 26, 455, DateTimeKind.Local).AddTicks(4168),
                             CreatedIpAddress = "192.161.1.1",
                             Description = "Small",
-                            MasterID = new Guid("eeee8f72-6081-4fbe-8c13-bbf3e23344a5"),
-                            ProductName = "Tasty Plastic Table",
+                            MasterID = new Guid("8f1e0a15-b2df-4c04-a44c-dc54c5962c3f"),
+                            ProductName = "Gorgeous Frozen Chair",
                             Status = 0,
-                            UnitPrice = 514.68m,
-                            UnitsInStock = (short)2674
+                            UnitPrice = 269.43m,
+                            UnitsInStock = (short)7421
                         },
                         new
                         {
                             Id = 19,
                             CategoryId = 2,
                             CreatedComputerName = "DESKTOP-I9V1GOS",
-                            CreatedDate = new DateTime(2023, 9, 7, 11, 8, 19, 677, DateTimeKind.Local).AddTicks(779),
+                            CreatedDate = new DateTime(2023, 9, 8, 14, 45, 26, 455, DateTimeKind.Local).AddTicks(4195),
                             CreatedIpAddress = "192.161.1.1",
-                            Description = "Fantastic",
-                            MasterID = new Guid("35eb5f07-5f03-4f90-930a-3a1d788d38f5"),
-                            ProductName = "Tasty Rubber Bike",
+                            Description = "Generic",
+                            MasterID = new Guid("ca12dd7b-4ed3-42cc-94c6-d43c8991ebcc"),
+                            ProductName = "Unbranded Steel Cheese",
                             Status = 0,
-                            UnitPrice = 225.23m,
-                            UnitsInStock = (short)1409
+                            UnitPrice = 697.70m,
+                            UnitsInStock = (short)9658
                         },
                         new
                         {
                             Id = 20,
                             CategoryId = 2,
                             CreatedComputerName = "DESKTOP-I9V1GOS",
-                            CreatedDate = new DateTime(2023, 9, 7, 11, 8, 19, 677, DateTimeKind.Local).AddTicks(796),
+                            CreatedDate = new DateTime(2023, 9, 8, 14, 45, 26, 455, DateTimeKind.Local).AddTicks(4280),
                             CreatedIpAddress = "192.161.1.1",
-                            Description = "Ergonomic",
-                            MasterID = new Guid("ec35e6d1-a747-4fbf-9024-e93f82b190e8"),
-                            ProductName = "Generic Plastic Shoes",
+                            Description = "Rustic",
+                            MasterID = new Guid("0ef2dd20-16d0-4705-8e9b-b0e192a34d87"),
+                            ProductName = "Awesome Soft Pizza",
                             Status = 0,
-                            UnitPrice = 686.00m,
-                            UnitsInStock = (short)9188
+                            UnitPrice = 345.77m,
+                            UnitsInStock = (short)2182
                         },
                         new
                         {
                             Id = 21,
                             CategoryId = 3,
                             CreatedComputerName = "DESKTOP-I9V1GOS",
-                            CreatedDate = new DateTime(2023, 9, 7, 11, 8, 19, 677, DateTimeKind.Local).AddTicks(815),
+                            CreatedDate = new DateTime(2023, 9, 8, 14, 45, 26, 455, DateTimeKind.Local).AddTicks(4307),
                             CreatedIpAddress = "192.161.1.1",
-                            Description = "Generic",
-                            MasterID = new Guid("4f8811f7-e009-471f-b015-7814034e6cec"),
-                            ProductName = "Handmade Fresh Gloves",
+                            Description = "Awesome",
+                            MasterID = new Guid("75f886cc-9345-441f-92f5-7cd595eb9f6b"),
+                            ProductName = "Refined Metal Shirt",
                             Status = 0,
-                            UnitPrice = 519.34m,
-                            UnitsInStock = (short)3867
+                            UnitPrice = 212.77m,
+                            UnitsInStock = (short)3307
                         },
                         new
                         {
                             Id = 22,
                             CategoryId = 3,
                             CreatedComputerName = "DESKTOP-I9V1GOS",
-                            CreatedDate = new DateTime(2023, 9, 7, 11, 8, 19, 677, DateTimeKind.Local).AddTicks(833),
+                            CreatedDate = new DateTime(2023, 9, 8, 14, 45, 26, 455, DateTimeKind.Local).AddTicks(4366),
                             CreatedIpAddress = "192.161.1.1",
-                            Description = "Sleek",
-                            MasterID = new Guid("f4c18886-2522-4b82-a024-719fb40eabef"),
-                            ProductName = "Unbranded Frozen Soap",
+                            Description = "Intelligent",
+                            MasterID = new Guid("ab72b60a-83ff-4065-98cd-13d895b4f7c5"),
+                            ProductName = "Awesome Frozen Gloves",
                             Status = 0,
-                            UnitPrice = 455.28m,
-                            UnitsInStock = (short)4567
+                            UnitPrice = 157.40m,
+                            UnitsInStock = (short)8872
                         },
                         new
                         {
                             Id = 23,
                             CategoryId = 3,
                             CreatedComputerName = "DESKTOP-I9V1GOS",
-                            CreatedDate = new DateTime(2023, 9, 7, 11, 8, 19, 677, DateTimeKind.Local).AddTicks(851),
+                            CreatedDate = new DateTime(2023, 9, 8, 14, 45, 26, 455, DateTimeKind.Local).AddTicks(4390),
                             CreatedIpAddress = "192.161.1.1",
-                            Description = "Generic",
-                            MasterID = new Guid("b672a78d-ab72-438a-809e-207909959c5f"),
-                            ProductName = "Small Steel Mouse",
+                            Description = "Intelligent",
+                            MasterID = new Guid("afef444f-3b72-47e0-8e21-ef1b96e481f0"),
+                            ProductName = "Generic Fresh Table",
                             Status = 0,
-                            UnitPrice = 749.79m,
-                            UnitsInStock = (short)5300
+                            UnitPrice = 50.08m,
+                            UnitsInStock = (short)9828
                         },
                         new
                         {
                             Id = 24,
                             CategoryId = 3,
                             CreatedComputerName = "DESKTOP-I9V1GOS",
-                            CreatedDate = new DateTime(2023, 9, 7, 11, 8, 19, 677, DateTimeKind.Local).AddTicks(868),
+                            CreatedDate = new DateTime(2023, 9, 8, 14, 45, 26, 455, DateTimeKind.Local).AddTicks(4420),
                             CreatedIpAddress = "192.161.1.1",
-                            Description = "Incredible",
-                            MasterID = new Guid("6d74cd2e-8047-4ec2-8178-5a58ea5fd6fb"),
-                            ProductName = "Practical Plastic Pizza",
+                            Description = "Fantastic",
+                            MasterID = new Guid("90773262-13b9-476e-bea5-0da45e54e976"),
+                            ProductName = "Generic Steel Bacon",
                             Status = 0,
-                            UnitPrice = 492.15m,
-                            UnitsInStock = (short)3187
+                            UnitPrice = 671.55m,
+                            UnitsInStock = (short)2057
                         },
                         new
                         {
                             Id = 25,
                             CategoryId = 3,
                             CreatedComputerName = "DESKTOP-I9V1GOS",
-                            CreatedDate = new DateTime(2023, 9, 7, 11, 8, 19, 677, DateTimeKind.Local).AddTicks(886),
+                            CreatedDate = new DateTime(2023, 9, 8, 14, 45, 26, 455, DateTimeKind.Local).AddTicks(4447),
                             CreatedIpAddress = "192.161.1.1",
-                            Description = "Tasty",
-                            MasterID = new Guid("05de8da3-9b39-4052-bc51-33d9ccd4e341"),
-                            ProductName = "Refined Rubber Hat",
+                            Description = "Handcrafted",
+                            MasterID = new Guid("46a07878-5625-41d6-afbd-9e83dd4ea322"),
+                            ProductName = "Gorgeous Plastic Chair",
                             Status = 0,
-                            UnitPrice = 321.06m,
-                            UnitsInStock = (short)7290
+                            UnitPrice = 500.76m,
+                            UnitsInStock = (short)498
                         },
                         new
                         {
                             Id = 26,
                             CategoryId = 3,
                             CreatedComputerName = "DESKTOP-I9V1GOS",
-                            CreatedDate = new DateTime(2023, 9, 7, 11, 8, 19, 677, DateTimeKind.Local).AddTicks(903),
+                            CreatedDate = new DateTime(2023, 9, 8, 14, 45, 26, 455, DateTimeKind.Local).AddTicks(4478),
                             CreatedIpAddress = "192.161.1.1",
-                            Description = "Fantastic",
-                            MasterID = new Guid("70e26e44-671b-40ac-947b-60b7d05e553c"),
-                            ProductName = "Incredible Frozen Mouse",
+                            Description = "Handcrafted",
+                            MasterID = new Guid("34a69888-f261-465b-ac74-4a2df6431270"),
+                            ProductName = "Handmade Fresh Soap",
                             Status = 0,
-                            UnitPrice = 778.55m,
-                            UnitsInStock = (short)122
+                            UnitPrice = 332.47m,
+                            UnitsInStock = (short)7515
                         },
                         new
                         {
                             Id = 27,
                             CategoryId = 3,
                             CreatedComputerName = "DESKTOP-I9V1GOS",
-                            CreatedDate = new DateTime(2023, 9, 7, 11, 8, 19, 677, DateTimeKind.Local).AddTicks(919),
+                            CreatedDate = new DateTime(2023, 9, 8, 14, 45, 26, 455, DateTimeKind.Local).AddTicks(4506),
                             CreatedIpAddress = "192.161.1.1",
-                            Description = "Awesome",
-                            MasterID = new Guid("3bfcbfd5-ea13-41a3-9581-b90bcea50989"),
-                            ProductName = "Ergonomic Rubber Shoes",
+                            Description = "Intelligent",
+                            MasterID = new Guid("858e564b-ddbe-4aee-a711-43ee5ce987f8"),
+                            ProductName = "Refined Rubber Soap",
                             Status = 0,
-                            UnitPrice = 792.62m,
-                            UnitsInStock = (short)485
+                            UnitPrice = 762.04m,
+                            UnitsInStock = (short)5315
                         },
                         new
                         {
                             Id = 28,
                             CategoryId = 3,
                             CreatedComputerName = "DESKTOP-I9V1GOS",
-                            CreatedDate = new DateTime(2023, 9, 7, 11, 8, 19, 677, DateTimeKind.Local).AddTicks(955),
+                            CreatedDate = new DateTime(2023, 9, 8, 14, 45, 26, 455, DateTimeKind.Local).AddTicks(4530),
                             CreatedIpAddress = "192.161.1.1",
-                            Description = "Tasty",
-                            MasterID = new Guid("c058b2ae-69bb-48cc-aee9-3b25ceda7c4e"),
-                            ProductName = "Awesome Concrete Bike",
+                            Description = "Rustic",
+                            MasterID = new Guid("44eb43d1-0a56-4530-b3c9-f624cf6a0fac"),
+                            ProductName = "Handcrafted Metal Pants",
                             Status = 0,
-                            UnitPrice = 42.83m,
-                            UnitsInStock = (short)883
+                            UnitPrice = 947.71m,
+                            UnitsInStock = (short)8259
                         },
                         new
                         {
                             Id = 29,
                             CategoryId = 3,
                             CreatedComputerName = "DESKTOP-I9V1GOS",
-                            CreatedDate = new DateTime(2023, 9, 7, 11, 8, 19, 677, DateTimeKind.Local).AddTicks(972),
+                            CreatedDate = new DateTime(2023, 9, 8, 14, 45, 26, 455, DateTimeKind.Local).AddTicks(4557),
                             CreatedIpAddress = "192.161.1.1",
-                            Description = "Awesome",
-                            MasterID = new Guid("4fb7bc1a-496d-4bb4-99e3-633bed87f67b"),
-                            ProductName = "Ergonomic Granite Mouse",
+                            Description = "Small",
+                            MasterID = new Guid("c0696989-83ea-4357-8374-3016b976c3c1"),
+                            ProductName = "Tasty Fresh Mouse",
                             Status = 0,
-                            UnitPrice = 604.02m,
-                            UnitsInStock = (short)7886
+                            UnitPrice = 765.92m,
+                            UnitsInStock = (short)2845
                         },
                         new
                         {
                             Id = 30,
                             CategoryId = 3,
                             CreatedComputerName = "DESKTOP-I9V1GOS",
-                            CreatedDate = new DateTime(2023, 9, 7, 11, 8, 19, 677, DateTimeKind.Local).AddTicks(989),
+                            CreatedDate = new DateTime(2023, 9, 8, 14, 45, 26, 455, DateTimeKind.Local).AddTicks(4628),
                             CreatedIpAddress = "192.161.1.1",
-                            Description = "Intelligent",
-                            MasterID = new Guid("db8e9941-b14f-40bc-8513-76642835570e"),
-                            ProductName = "Unbranded Wooden Ball",
+                            Description = "Handmade",
+                            MasterID = new Guid("4c2bcd4e-1b86-456a-94fd-312221a0dc3d"),
+                            ProductName = "Awesome Fresh Pants",
                             Status = 0,
-                            UnitPrice = 626.17m,
-                            UnitsInStock = (short)3575
+                            UnitPrice = 588.52m,
+                            UnitsInStock = (short)9521
                         },
                         new
                         {
                             Id = 31,
                             CategoryId = 4,
                             CreatedComputerName = "DESKTOP-I9V1GOS",
-                            CreatedDate = new DateTime(2023, 9, 7, 11, 8, 19, 677, DateTimeKind.Local).AddTicks(1009),
+                            CreatedDate = new DateTime(2023, 9, 8, 14, 45, 26, 455, DateTimeKind.Local).AddTicks(4655),
                             CreatedIpAddress = "192.161.1.1",
-                            Description = "Intelligent",
-                            MasterID = new Guid("d94bf42f-1414-430c-993e-ebf134cd77aa"),
-                            ProductName = "Generic Rubber Bacon",
+                            Description = "Handcrafted",
+                            MasterID = new Guid("4c9bc54d-e31b-4951-a693-d1e504eeb56e"),
+                            ProductName = "Sleek Soft Hat",
                             Status = 0,
-                            UnitPrice = 625.18m,
-                            UnitsInStock = (short)2520
+                            UnitPrice = 942.13m,
+                            UnitsInStock = (short)3090
                         },
                         new
                         {
                             Id = 32,
                             CategoryId = 4,
                             CreatedComputerName = "DESKTOP-I9V1GOS",
-                            CreatedDate = new DateTime(2023, 9, 7, 11, 8, 19, 677, DateTimeKind.Local).AddTicks(1026),
+                            CreatedDate = new DateTime(2023, 9, 8, 14, 45, 26, 455, DateTimeKind.Local).AddTicks(4682),
                             CreatedIpAddress = "192.161.1.1",
-                            Description = "Licensed",
-                            MasterID = new Guid("93993e2f-593a-408f-8514-556a6b52cedf"),
-                            ProductName = "Handmade Steel Car",
+                            Description = "Unbranded",
+                            MasterID = new Guid("a397cb0e-aadd-4fb5-b33f-f1091fbcd0d2"),
+                            ProductName = "Handmade Steel Keyboard",
                             Status = 0,
-                            UnitPrice = 670.47m,
-                            UnitsInStock = (short)7501
+                            UnitPrice = 639.75m,
+                            UnitsInStock = (short)2882
                         },
                         new
                         {
                             Id = 33,
                             CategoryId = 4,
                             CreatedComputerName = "DESKTOP-I9V1GOS",
-                            CreatedDate = new DateTime(2023, 9, 7, 11, 8, 19, 677, DateTimeKind.Local).AddTicks(1043),
+                            CreatedDate = new DateTime(2023, 9, 8, 14, 45, 26, 455, DateTimeKind.Local).AddTicks(4705),
                             CreatedIpAddress = "192.161.1.1",
-                            Description = "Practical",
-                            MasterID = new Guid("44a34cde-cc7e-4063-bfc0-29bffe2f802a"),
-                            ProductName = "Gorgeous Wooden Towels",
+                            Description = "Licensed",
+                            MasterID = new Guid("afb5228e-84db-45fc-b09c-d52e2ab24358"),
+                            ProductName = "Incredible Cotton Salad",
                             Status = 0,
-                            UnitPrice = 596.38m,
-                            UnitsInStock = (short)5686
+                            UnitPrice = 772.98m,
+                            UnitsInStock = (short)2713
                         },
                         new
                         {
                             Id = 34,
                             CategoryId = 4,
                             CreatedComputerName = "DESKTOP-I9V1GOS",
-                            CreatedDate = new DateTime(2023, 9, 7, 11, 8, 19, 677, DateTimeKind.Local).AddTicks(1061),
+                            CreatedDate = new DateTime(2023, 9, 8, 14, 45, 26, 455, DateTimeKind.Local).AddTicks(4738),
                             CreatedIpAddress = "192.161.1.1",
-                            Description = "Awesome",
-                            MasterID = new Guid("33d072f3-20d1-4412-878d-f8fe0a026f11"),
-                            ProductName = "Tasty Granite Sausages",
+                            Description = "Generic",
+                            MasterID = new Guid("5097a79d-e397-4c50-a038-c3a2913117ef"),
+                            ProductName = "Licensed Granite Keyboard",
                             Status = 0,
-                            UnitPrice = 659.28m,
-                            UnitsInStock = (short)7627
+                            UnitPrice = 58.41m,
+                            UnitsInStock = (short)7465
                         },
                         new
                         {
                             Id = 35,
                             CategoryId = 4,
                             CreatedComputerName = "DESKTOP-I9V1GOS",
-                            CreatedDate = new DateTime(2023, 9, 7, 11, 8, 19, 677, DateTimeKind.Local).AddTicks(1079),
+                            CreatedDate = new DateTime(2023, 9, 8, 14, 45, 26, 455, DateTimeKind.Local).AddTicks(4763),
                             CreatedIpAddress = "192.161.1.1",
-                            Description = "Incredible",
-                            MasterID = new Guid("9d4276a2-f399-4531-a281-bb4b27caec4f"),
-                            ProductName = "Tasty Fresh Car",
+                            Description = "Awesome",
+                            MasterID = new Guid("c063046c-da07-48bc-94e7-fc3df8c33f40"),
+                            ProductName = "Rustic Frozen Towels",
                             Status = 0,
-                            UnitPrice = 596.06m,
-                            UnitsInStock = (short)8938
+                            UnitPrice = 106.48m,
+                            UnitsInStock = (short)5565
                         },
                         new
                         {
                             Id = 36,
                             CategoryId = 4,
                             CreatedComputerName = "DESKTOP-I9V1GOS",
-                            CreatedDate = new DateTime(2023, 9, 7, 11, 8, 19, 677, DateTimeKind.Local).AddTicks(1095),
+                            CreatedDate = new DateTime(2023, 9, 8, 14, 45, 26, 455, DateTimeKind.Local).AddTicks(4792),
                             CreatedIpAddress = "192.161.1.1",
-                            Description = "Ergonomic",
-                            MasterID = new Guid("3f88b35b-e0a0-4bb9-9f68-5e4cee554a21"),
-                            ProductName = "Gorgeous Frozen Shirt",
+                            Description = "Awesome",
+                            MasterID = new Guid("d59248ea-424a-4754-9b53-a56752b2c3bd"),
+                            ProductName = "Ergonomic Cotton Pizza",
                             Status = 0,
-                            UnitPrice = 813.99m,
-                            UnitsInStock = (short)1897
+                            UnitPrice = 478.85m,
+                            UnitsInStock = (short)269
                         },
                         new
                         {
                             Id = 37,
                             CategoryId = 4,
                             CreatedComputerName = "DESKTOP-I9V1GOS",
-                            CreatedDate = new DateTime(2023, 9, 7, 11, 8, 19, 677, DateTimeKind.Local).AddTicks(1113),
+                            CreatedDate = new DateTime(2023, 9, 8, 14, 45, 26, 455, DateTimeKind.Local).AddTicks(4818),
                             CreatedIpAddress = "192.161.1.1",
                             Description = "Handcrafted",
-                            MasterID = new Guid("a768b990-2d49-4234-a666-58c7e8c331ef"),
-                            ProductName = "Small Granite Pants",
+                            MasterID = new Guid("0006e355-6dab-4230-a2ed-ec48e286a30a"),
+                            ProductName = "Licensed Rubber Computer",
                             Status = 0,
-                            UnitPrice = 839.88m,
-                            UnitsInStock = (short)5647
+                            UnitPrice = 71.55m,
+                            UnitsInStock = (short)4844
                         },
                         new
                         {
                             Id = 38,
                             CategoryId = 4,
                             CreatedComputerName = "DESKTOP-I9V1GOS",
-                            CreatedDate = new DateTime(2023, 9, 7, 11, 8, 19, 677, DateTimeKind.Local).AddTicks(1165),
+                            CreatedDate = new DateTime(2023, 9, 8, 14, 45, 26, 455, DateTimeKind.Local).AddTicks(4848),
                             CreatedIpAddress = "192.161.1.1",
-                            Description = "Handmade",
-                            MasterID = new Guid("95eb3f46-37be-457d-8db1-3a99fab9d333"),
-                            ProductName = "Refined Soft Chicken",
+                            Description = "Small",
+                            MasterID = new Guid("2c96b9cc-66b9-400b-b922-931037396258"),
+                            ProductName = "Handmade Fresh Bike",
                             Status = 0,
-                            UnitPrice = 248.48m,
-                            UnitsInStock = (short)3752
+                            UnitPrice = 622.52m,
+                            UnitsInStock = (short)8725
                         },
                         new
                         {
                             Id = 39,
                             CategoryId = 4,
                             CreatedComputerName = "DESKTOP-I9V1GOS",
-                            CreatedDate = new DateTime(2023, 9, 7, 11, 8, 19, 677, DateTimeKind.Local).AddTicks(1184),
+                            CreatedDate = new DateTime(2023, 9, 8, 14, 45, 26, 455, DateTimeKind.Local).AddTicks(4909),
                             CreatedIpAddress = "192.161.1.1",
-                            Description = "Gorgeous",
-                            MasterID = new Guid("9a429f1f-13bd-48a8-92cb-b6b94bd6f556"),
-                            ProductName = "Handmade Rubber Table",
+                            Description = "Practical",
+                            MasterID = new Guid("61ca3138-089c-4382-b051-e2728af4f3cb"),
+                            ProductName = "Unbranded Plastic Salad",
                             Status = 0,
-                            UnitPrice = 266.70m,
-                            UnitsInStock = (short)5827
+                            UnitPrice = 39.64m,
+                            UnitsInStock = (short)2303
                         },
                         new
                         {
                             Id = 40,
                             CategoryId = 4,
                             CreatedComputerName = "DESKTOP-I9V1GOS",
-                            CreatedDate = new DateTime(2023, 9, 7, 11, 8, 19, 677, DateTimeKind.Local).AddTicks(1201),
+                            CreatedDate = new DateTime(2023, 9, 8, 14, 45, 26, 455, DateTimeKind.Local).AddTicks(4937),
                             CreatedIpAddress = "192.161.1.1",
-                            Description = "Refined",
-                            MasterID = new Guid("f9b1d55e-d961-43d8-9d62-e8a6dc8bead6"),
-                            ProductName = "Licensed Fresh Computer",
+                            Description = "Gorgeous",
+                            MasterID = new Guid("2bea22ba-77bf-432e-a859-d437191bfa31"),
+                            ProductName = "Handcrafted Metal Pizza",
                             Status = 0,
-                            UnitPrice = 77.75m,
-                            UnitsInStock = (short)2551
+                            UnitPrice = 46.77m,
+                            UnitsInStock = (short)3642
                         },
                         new
                         {
                             Id = 41,
                             CategoryId = 5,
                             CreatedComputerName = "DESKTOP-I9V1GOS",
-                            CreatedDate = new DateTime(2023, 9, 7, 11, 8, 19, 677, DateTimeKind.Local).AddTicks(1218),
+                            CreatedDate = new DateTime(2023, 9, 8, 14, 45, 26, 455, DateTimeKind.Local).AddTicks(4962),
                             CreatedIpAddress = "192.161.1.1",
-                            Description = "Small",
-                            MasterID = new Guid("27ffbda7-d339-4112-872a-0a86e20498f6"),
-                            ProductName = "Incredible Cotton Salad",
+                            Description = "Refined",
+                            MasterID = new Guid("37bf8e26-e8ea-4e2b-874e-b65cd8809d6d"),
+                            ProductName = "Unbranded Frozen Tuna",
                             Status = 0,
-                            UnitPrice = 897.14m,
-                            UnitsInStock = (short)5985
+                            UnitPrice = 29.08m,
+                            UnitsInStock = (short)7100
                         },
                         new
                         {
                             Id = 42,
                             CategoryId = 5,
                             CreatedComputerName = "DESKTOP-I9V1GOS",
-                            CreatedDate = new DateTime(2023, 9, 7, 11, 8, 19, 677, DateTimeKind.Local).AddTicks(1235),
+                            CreatedDate = new DateTime(2023, 9, 8, 14, 45, 26, 455, DateTimeKind.Local).AddTicks(4991),
                             CreatedIpAddress = "192.161.1.1",
-                            Description = "Generic",
-                            MasterID = new Guid("241af248-1acc-43d8-a0c1-f6ee2c32bad2"),
-                            ProductName = "Sleek Soft Keyboard",
+                            Description = "Licensed",
+                            MasterID = new Guid("eb87837a-d26c-4d19-8ab9-cb8102eb4334"),
+                            ProductName = "Handmade Metal Chair",
                             Status = 0,
-                            UnitPrice = 576.85m,
-                            UnitsInStock = (short)3952
+                            UnitPrice = 433.91m,
+                            UnitsInStock = (short)7030
                         },
                         new
                         {
                             Id = 43,
                             CategoryId = 5,
                             CreatedComputerName = "DESKTOP-I9V1GOS",
-                            CreatedDate = new DateTime(2023, 9, 7, 11, 8, 19, 677, DateTimeKind.Local).AddTicks(1252),
+                            CreatedDate = new DateTime(2023, 9, 8, 14, 45, 26, 455, DateTimeKind.Local).AddTicks(5018),
                             CreatedIpAddress = "192.161.1.1",
-                            Description = "Small",
-                            MasterID = new Guid("4d814088-a518-4318-93d0-de86b350187a"),
-                            ProductName = "Handcrafted Rubber Computer",
+                            Description = "Sleek",
+                            MasterID = new Guid("23b0f468-304d-40e7-9b2c-596e2e4befb7"),
+                            ProductName = "Handmade Rubber Computer",
                             Status = 0,
-                            UnitPrice = 655.15m,
-                            UnitsInStock = (short)627
+                            UnitPrice = 78.82m,
+                            UnitsInStock = (short)4061
                         },
                         new
                         {
                             Id = 44,
                             CategoryId = 5,
                             CreatedComputerName = "DESKTOP-I9V1GOS",
-                            CreatedDate = new DateTime(2023, 9, 7, 11, 8, 19, 677, DateTimeKind.Local).AddTicks(1268),
+                            CreatedDate = new DateTime(2023, 9, 8, 14, 45, 26, 455, DateTimeKind.Local).AddTicks(5044),
                             CreatedIpAddress = "192.161.1.1",
-                            Description = "Refined",
-                            MasterID = new Guid("2867b9e4-951d-4b94-a1d8-1e4d7989b473"),
-                            ProductName = "Gorgeous Plastic Computer",
+                            Description = "Handcrafted",
+                            MasterID = new Guid("8822c7f2-efe8-41e8-be4f-0d250979bf1e"),
+                            ProductName = "Awesome Plastic Computer",
                             Status = 0,
-                            UnitPrice = 370.21m,
-                            UnitsInStock = (short)3199
+                            UnitPrice = 843.04m,
+                            UnitsInStock = (short)4654
                         },
                         new
                         {
                             Id = 45,
                             CategoryId = 5,
                             CreatedComputerName = "DESKTOP-I9V1GOS",
-                            CreatedDate = new DateTime(2023, 9, 7, 11, 8, 19, 677, DateTimeKind.Local).AddTicks(1285),
+                            CreatedDate = new DateTime(2023, 9, 8, 14, 45, 26, 455, DateTimeKind.Local).AddTicks(5068),
                             CreatedIpAddress = "192.161.1.1",
-                            Description = "Intelligent",
-                            MasterID = new Guid("44569646-922a-40df-baf1-5f07cac13088"),
-                            ProductName = "Handmade Metal Keyboard",
+                            Description = "Sleek",
+                            MasterID = new Guid("9624669c-f9f2-47c3-b737-1b2975de9027"),
+                            ProductName = "Intelligent Metal Bacon",
                             Status = 0,
-                            UnitPrice = 202.16m,
-                            UnitsInStock = (short)2387
+                            UnitPrice = 644.22m,
+                            UnitsInStock = (short)9066
                         },
                         new
                         {
                             Id = 46,
                             CategoryId = 5,
                             CreatedComputerName = "DESKTOP-I9V1GOS",
-                            CreatedDate = new DateTime(2023, 9, 7, 11, 8, 19, 677, DateTimeKind.Local).AddTicks(1301),
+                            CreatedDate = new DateTime(2023, 9, 8, 14, 45, 26, 455, DateTimeKind.Local).AddTicks(5093),
                             CreatedIpAddress = "192.161.1.1",
-                            Description = "Sleek",
-                            MasterID = new Guid("4aa6829f-9260-469f-bb6d-e1fffaa7a42a"),
-                            ProductName = "Sleek Steel Shoes",
+                            Description = "Small",
+                            MasterID = new Guid("f096f8ca-854b-4a8d-be23-dfcf9057664b"),
+                            ProductName = "Awesome Fresh Salad",
                             Status = 0,
-                            UnitPrice = 721.68m,
-                            UnitsInStock = (short)5981
+                            UnitPrice = 305.87m,
+                            UnitsInStock = (short)5016
                         },
                         new
                         {
                             Id = 47,
                             CategoryId = 5,
                             CreatedComputerName = "DESKTOP-I9V1GOS",
-                            CreatedDate = new DateTime(2023, 9, 7, 11, 8, 19, 677, DateTimeKind.Local).AddTicks(1319),
+                            CreatedDate = new DateTime(2023, 9, 8, 14, 45, 26, 455, DateTimeKind.Local).AddTicks(5119),
                             CreatedIpAddress = "192.161.1.1",
-                            Description = "Handcrafted",
-                            MasterID = new Guid("614abfe0-b92d-4993-b06a-ba50fb556be9"),
-                            ProductName = "Ergonomic Frozen Mouse",
+                            Description = "Sleek",
+                            MasterID = new Guid("1dc6c313-324c-47dc-b4b5-dd6ded96355e"),
+                            ProductName = "Unbranded Granite Ball",
                             Status = 0,
-                            UnitPrice = 938.39m,
-                            UnitsInStock = (short)7582
+                            UnitPrice = 556.39m,
+                            UnitsInStock = (short)6246
                         },
                         new
                         {
                             Id = 48,
                             CategoryId = 5,
                             CreatedComputerName = "DESKTOP-I9V1GOS",
-                            CreatedDate = new DateTime(2023, 9, 7, 11, 8, 19, 677, DateTimeKind.Local).AddTicks(1356),
+                            CreatedDate = new DateTime(2023, 9, 8, 14, 45, 26, 455, DateTimeKind.Local).AddTicks(5145),
                             CreatedIpAddress = "192.161.1.1",
-                            Description = "Small",
-                            MasterID = new Guid("486d1041-27c0-4dd0-98cc-b0663bfa7730"),
-                            ProductName = "Small Fresh Cheese",
+                            Description = "Rustic",
+                            MasterID = new Guid("3f5fbbf5-8070-425e-9011-2bad502a808e"),
+                            ProductName = "Handmade Frozen Shirt",
                             Status = 0,
-                            UnitPrice = 619.15m,
-                            UnitsInStock = (short)3254
+                            UnitPrice = 411.88m,
+                            UnitsInStock = (short)4961
                         },
                         new
                         {
                             Id = 49,
                             CategoryId = 5,
                             CreatedComputerName = "DESKTOP-I9V1GOS",
-                            CreatedDate = new DateTime(2023, 9, 7, 11, 8, 19, 677, DateTimeKind.Local).AddTicks(1372),
+                            CreatedDate = new DateTime(2023, 9, 8, 14, 45, 26, 455, DateTimeKind.Local).AddTicks(5208),
                             CreatedIpAddress = "192.161.1.1",
-                            Description = "Fantastic",
-                            MasterID = new Guid("61c92957-d739-4a46-b64b-8ba90ef0fc86"),
-                            ProductName = "Incredible Steel Gloves",
+                            Description = "Ergonomic",
+                            MasterID = new Guid("c2305166-5de3-4c06-8936-ca50370ee5f5"),
+                            ProductName = "Gorgeous Fresh Hat",
                             Status = 0,
-                            UnitPrice = 755.84m,
-                            UnitsInStock = (short)6215
+                            UnitPrice = 326.01m,
+                            UnitsInStock = (short)3549
                         },
                         new
                         {
                             Id = 50,
                             CategoryId = 5,
                             CreatedComputerName = "DESKTOP-I9V1GOS",
-                            CreatedDate = new DateTime(2023, 9, 7, 11, 8, 19, 677, DateTimeKind.Local).AddTicks(1388),
+                            CreatedDate = new DateTime(2023, 9, 8, 14, 45, 26, 455, DateTimeKind.Local).AddTicks(5236),
                             CreatedIpAddress = "192.161.1.1",
-                            Description = "Unbranded",
-                            MasterID = new Guid("89234bdc-bb36-4321-ac2f-592c3b547c77"),
-                            ProductName = "Handmade Concrete Tuna",
+                            Description = "Sleek",
+                            MasterID = new Guid("408fb03f-d542-4e80-a9d5-a915d1f9a5d4"),
+                            ProductName = "Practical Cotton Table",
                             Status = 0,
-                            UnitPrice = 840.42m,
-                            UnitsInStock = (short)8527
+                            UnitPrice = 485.65m,
+                            UnitsInStock = (short)7573
                         },
                         new
                         {
                             Id = 51,
                             CategoryId = 6,
                             CreatedComputerName = "DESKTOP-I9V1GOS",
-                            CreatedDate = new DateTime(2023, 9, 7, 11, 8, 19, 677, DateTimeKind.Local).AddTicks(1404),
+                            CreatedDate = new DateTime(2023, 9, 8, 14, 45, 26, 455, DateTimeKind.Local).AddTicks(5261),
                             CreatedIpAddress = "192.161.1.1",
-                            Description = "Incredible",
-                            MasterID = new Guid("e4a91a56-9d96-4951-86cc-a8b479294d23"),
-                            ProductName = "Unbranded Soft Car",
+                            Description = "Unbranded",
+                            MasterID = new Guid("f7efac3c-8f14-416e-90c3-aaa0bd911562"),
+                            ProductName = "Intelligent Concrete Pizza",
                             Status = 0,
-                            UnitPrice = 915.79m,
-                            UnitsInStock = (short)3943
+                            UnitPrice = 765.07m,
+                            UnitsInStock = (short)1062
                         },
                         new
                         {
                             Id = 52,
                             CategoryId = 6,
                             CreatedComputerName = "DESKTOP-I9V1GOS",
-                            CreatedDate = new DateTime(2023, 9, 7, 11, 8, 19, 677, DateTimeKind.Local).AddTicks(1421),
+                            CreatedDate = new DateTime(2023, 9, 8, 14, 45, 26, 455, DateTimeKind.Local).AddTicks(5287),
                             CreatedIpAddress = "192.161.1.1",
-                            Description = "Sleek",
-                            MasterID = new Guid("aa625e2a-2537-4fa9-8651-9d014c448c11"),
-                            ProductName = "Handmade Concrete Table",
+                            Description = "Rustic",
+                            MasterID = new Guid("1ed23bfe-79cb-4ef9-b228-65f797487623"),
+                            ProductName = "Handmade Steel Table",
                             Status = 0,
-                            UnitPrice = 540.56m,
-                            UnitsInStock = (short)250
+                            UnitPrice = 651.13m,
+                            UnitsInStock = (short)6484
                         },
                         new
                         {
                             Id = 53,
                             CategoryId = 6,
                             CreatedComputerName = "DESKTOP-I9V1GOS",
-                            CreatedDate = new DateTime(2023, 9, 7, 11, 8, 19, 677, DateTimeKind.Local).AddTicks(1436),
+                            CreatedDate = new DateTime(2023, 9, 8, 14, 45, 26, 455, DateTimeKind.Local).AddTicks(5312),
                             CreatedIpAddress = "192.161.1.1",
-                            Description = "Practical",
-                            MasterID = new Guid("cbbd7871-c672-4b2b-8471-5f727d27c41e"),
-                            ProductName = "Sleek Plastic Gloves",
+                            Description = "Ergonomic",
+                            MasterID = new Guid("51e3968a-af0e-4acb-8977-479ef6f686e3"),
+                            ProductName = "Generic Granite Pizza",
                             Status = 0,
-                            UnitPrice = 972.29m,
-                            UnitsInStock = (short)501
+                            UnitPrice = 245.18m,
+                            UnitsInStock = (short)2472
                         },
                         new
                         {
                             Id = 54,
                             CategoryId = 6,
                             CreatedComputerName = "DESKTOP-I9V1GOS",
-                            CreatedDate = new DateTime(2023, 9, 7, 11, 8, 19, 677, DateTimeKind.Local).AddTicks(1452),
+                            CreatedDate = new DateTime(2023, 9, 8, 14, 45, 26, 455, DateTimeKind.Local).AddTicks(5339),
                             CreatedIpAddress = "192.161.1.1",
-                            Description = "Practical",
-                            MasterID = new Guid("e0ba8dd6-30c2-4e85-807b-6566ff5aa521"),
-                            ProductName = "Refined Steel Chair",
+                            Description = "Sleek",
+                            MasterID = new Guid("6bc43ad5-f66b-4d69-8fc0-b863806d5313"),
+                            ProductName = "Tasty Steel Tuna",
                             Status = 0,
-                            UnitPrice = 560.12m,
-                            UnitsInStock = (short)6764
+                            UnitPrice = 255.69m,
+                            UnitsInStock = (short)4992
                         },
                         new
                         {
                             Id = 55,
                             CategoryId = 6,
                             CreatedComputerName = "DESKTOP-I9V1GOS",
-                            CreatedDate = new DateTime(2023, 9, 7, 11, 8, 19, 677, DateTimeKind.Local).AddTicks(1470),
+                            CreatedDate = new DateTime(2023, 9, 8, 14, 45, 26, 455, DateTimeKind.Local).AddTicks(5365),
                             CreatedIpAddress = "192.161.1.1",
-                            Description = "Handcrafted",
-                            MasterID = new Guid("3617300a-7f1a-4e73-b66c-48975e4daa26"),
-                            ProductName = "Generic Cotton Shirt",
+                            Description = "Tasty",
+                            MasterID = new Guid("f3749406-8fc9-464a-b620-2a2054f56296"),
+                            ProductName = "Unbranded Cotton Computer",
                             Status = 0,
-                            UnitPrice = 22.98m,
-                            UnitsInStock = (short)7460
+                            UnitPrice = 802.28m,
+                            UnitsInStock = (short)2236
                         },
                         new
                         {
                             Id = 56,
                             CategoryId = 6,
                             CreatedComputerName = "DESKTOP-I9V1GOS",
-                            CreatedDate = new DateTime(2023, 9, 7, 11, 8, 19, 677, DateTimeKind.Local).AddTicks(1487),
+                            CreatedDate = new DateTime(2023, 9, 8, 14, 45, 26, 455, DateTimeKind.Local).AddTicks(5391),
                             CreatedIpAddress = "192.161.1.1",
-                            Description = "Ergonomic",
-                            MasterID = new Guid("70493b29-a1b2-4b14-a683-753d87c1c050"),
-                            ProductName = "Refined Metal Chips",
+                            Description = "Awesome",
+                            MasterID = new Guid("a42779b2-34d4-45ab-ad8f-3a3379cf319c"),
+                            ProductName = "Fantastic Wooden Towels",
                             Status = 0,
-                            UnitPrice = 13.90m,
-                            UnitsInStock = (short)6407
+                            UnitPrice = 664.27m,
+                            UnitsInStock = (short)1329
                         },
                         new
                         {
                             Id = 57,
                             CategoryId = 6,
                             CreatedComputerName = "DESKTOP-I9V1GOS",
-                            CreatedDate = new DateTime(2023, 9, 7, 11, 8, 19, 677, DateTimeKind.Local).AddTicks(1504),
+                            CreatedDate = new DateTime(2023, 9, 8, 14, 45, 26, 455, DateTimeKind.Local).AddTicks(5417),
                             CreatedIpAddress = "192.161.1.1",
-                            Description = "Refined",
-                            MasterID = new Guid("345a5f6e-b486-4663-9da0-fc0bc3cf4709"),
-                            ProductName = "Incredible Cotton Fish",
+                            Description = "Fantastic",
+                            MasterID = new Guid("811b8536-1840-4af1-bd22-069d64511a4b"),
+                            ProductName = "Fantastic Wooden Chair",
                             Status = 0,
-                            UnitPrice = 138.53m,
-                            UnitsInStock = (short)2263
+                            UnitPrice = 202.53m,
+                            UnitsInStock = (short)4348
                         },
                         new
                         {
                             Id = 58,
                             CategoryId = 6,
                             CreatedComputerName = "DESKTOP-I9V1GOS",
-                            CreatedDate = new DateTime(2023, 9, 7, 11, 8, 19, 677, DateTimeKind.Local).AddTicks(1542),
+                            CreatedDate = new DateTime(2023, 9, 8, 14, 45, 26, 455, DateTimeKind.Local).AddTicks(5445),
                             CreatedIpAddress = "192.161.1.1",
-                            Description = "Generic",
-                            MasterID = new Guid("8ccc6c52-4c26-489a-8621-98bf1fa0cdab"),
-                            ProductName = "Awesome Wooden Chair",
+                            Description = "Intelligent",
+                            MasterID = new Guid("761bfbb7-3fbb-4e21-bc0d-80145647f6d4"),
+                            ProductName = "Rustic Cotton Chair",
                             Status = 0,
-                            UnitPrice = 948.44m,
-                            UnitsInStock = (short)1102
+                            UnitPrice = 877.53m,
+                            UnitsInStock = (short)5777
                         },
                         new
                         {
                             Id = 59,
                             CategoryId = 6,
                             CreatedComputerName = "DESKTOP-I9V1GOS",
-                            CreatedDate = new DateTime(2023, 9, 7, 11, 8, 19, 677, DateTimeKind.Local).AddTicks(1558),
+                            CreatedDate = new DateTime(2023, 9, 8, 14, 45, 26, 455, DateTimeKind.Local).AddTicks(5507),
                             CreatedIpAddress = "192.161.1.1",
-                            Description = "Tasty",
-                            MasterID = new Guid("b3d6cc73-c839-4216-907e-bf5556b7c545"),
-                            ProductName = "Rustic Steel Cheese",
+                            Description = "Unbranded",
+                            MasterID = new Guid("a8f08ac5-583d-49f3-8d34-bceaed6295bf"),
+                            ProductName = "Refined Wooden Car",
                             Status = 0,
-                            UnitPrice = 728.22m,
-                            UnitsInStock = (short)3882
+                            UnitPrice = 15.27m,
+                            UnitsInStock = (short)9808
                         },
                         new
                         {
                             Id = 60,
                             CategoryId = 6,
                             CreatedComputerName = "DESKTOP-I9V1GOS",
-                            CreatedDate = new DateTime(2023, 9, 7, 11, 8, 19, 677, DateTimeKind.Local).AddTicks(1573),
+                            CreatedDate = new DateTime(2023, 9, 8, 14, 45, 26, 455, DateTimeKind.Local).AddTicks(5534),
                             CreatedIpAddress = "192.161.1.1",
-                            Description = "Licensed",
-                            MasterID = new Guid("2d74f722-236f-40bb-9850-f07ef7391365"),
-                            ProductName = "Intelligent Concrete Bacon",
+                            Description = "Generic",
+                            MasterID = new Guid("e4f624e8-97af-4ee5-834b-929324a42401"),
+                            ProductName = "Intelligent Frozen Towels",
                             Status = 0,
-                            UnitPrice = 591.09m,
-                            UnitsInStock = (short)5560
+                            UnitPrice = 92.43m,
+                            UnitsInStock = (short)8860
                         },
                         new
                         {
                             Id = 61,
                             CategoryId = 7,
                             CreatedComputerName = "DESKTOP-I9V1GOS",
-                            CreatedDate = new DateTime(2023, 9, 7, 11, 8, 19, 677, DateTimeKind.Local).AddTicks(1590),
+                            CreatedDate = new DateTime(2023, 9, 8, 14, 45, 26, 455, DateTimeKind.Local).AddTicks(5564),
                             CreatedIpAddress = "192.161.1.1",
-                            Description = "Gorgeous",
-                            MasterID = new Guid("61af9b8c-c916-4720-b421-784f832ff23c"),
-                            ProductName = "Incredible Soft Chair",
+                            Description = "Awesome",
+                            MasterID = new Guid("2b8573c6-3af1-487e-9a81-56530e8f7b68"),
+                            ProductName = "Sleek Frozen Car",
                             Status = 0,
-                            UnitPrice = 360.09m,
-                            UnitsInStock = (short)3523
+                            UnitPrice = 685.39m,
+                            UnitsInStock = (short)7728
                         },
                         new
                         {
                             Id = 62,
                             CategoryId = 7,
                             CreatedComputerName = "DESKTOP-I9V1GOS",
-                            CreatedDate = new DateTime(2023, 9, 7, 11, 8, 19, 677, DateTimeKind.Local).AddTicks(1606),
+                            CreatedDate = new DateTime(2023, 9, 8, 14, 45, 26, 455, DateTimeKind.Local).AddTicks(5599),
                             CreatedIpAddress = "192.161.1.1",
-                            Description = "Intelligent",
-                            MasterID = new Guid("d7f14950-9909-4396-819b-650c9ea061d1"),
-                            ProductName = "Intelligent Metal Chicken",
+                            Description = "Gorgeous",
+                            MasterID = new Guid("4a5d8f3f-3b1d-4817-8b85-effc3c74a012"),
+                            ProductName = "Incredible Rubber Ball",
                             Status = 0,
-                            UnitPrice = 415.38m,
-                            UnitsInStock = (short)4678
+                            UnitPrice = 911.18m,
+                            UnitsInStock = (short)3014
                         },
                         new
                         {
                             Id = 63,
                             CategoryId = 7,
                             CreatedComputerName = "DESKTOP-I9V1GOS",
-                            CreatedDate = new DateTime(2023, 9, 7, 11, 8, 19, 677, DateTimeKind.Local).AddTicks(1625),
+                            CreatedDate = new DateTime(2023, 9, 8, 14, 45, 26, 455, DateTimeKind.Local).AddTicks(5629),
                             CreatedIpAddress = "192.161.1.1",
-                            Description = "Licensed",
-                            MasterID = new Guid("658092b6-1e18-4f1f-9d3c-52c6e2901229"),
-                            ProductName = "Fantastic Cotton Towels",
+                            Description = "Unbranded",
+                            MasterID = new Guid("80d17b48-490a-47dc-bfbe-79b0195cd752"),
+                            ProductName = "Fantastic Fresh Gloves",
                             Status = 0,
-                            UnitPrice = 534.94m,
-                            UnitsInStock = (short)7146
+                            UnitPrice = 25.80m,
+                            UnitsInStock = (short)7080
                         },
                         new
                         {
                             Id = 64,
                             CategoryId = 7,
                             CreatedComputerName = "DESKTOP-I9V1GOS",
-                            CreatedDate = new DateTime(2023, 9, 7, 11, 8, 19, 677, DateTimeKind.Local).AddTicks(1642),
+                            CreatedDate = new DateTime(2023, 9, 8, 14, 45, 26, 455, DateTimeKind.Local).AddTicks(5659),
                             CreatedIpAddress = "192.161.1.1",
                             Description = "Refined",
-                            MasterID = new Guid("94758869-fe52-4cc2-964c-6b80a5c26092"),
-                            ProductName = "Rustic Granite Bike",
+                            MasterID = new Guid("b40cda25-f9ea-464e-95ba-6d43ae0d16bf"),
+                            ProductName = "Gorgeous Frozen Hat",
                             Status = 0,
-                            UnitPrice = 539.67m,
-                            UnitsInStock = (short)5091
+                            UnitPrice = 854.75m,
+                            UnitsInStock = (short)47
                         },
                         new
                         {
                             Id = 65,
                             CategoryId = 7,
                             CreatedComputerName = "DESKTOP-I9V1GOS",
-                            CreatedDate = new DateTime(2023, 9, 7, 11, 8, 19, 677, DateTimeKind.Local).AddTicks(1659),
+                            CreatedDate = new DateTime(2023, 9, 8, 14, 45, 26, 455, DateTimeKind.Local).AddTicks(5684),
                             CreatedIpAddress = "192.161.1.1",
-                            Description = "Unbranded",
-                            MasterID = new Guid("0a2501fa-a5c9-46ce-96cc-408d3d8a7578"),
-                            ProductName = "Sleek Frozen Mouse",
+                            Description = "Awesome",
+                            MasterID = new Guid("dfc206ff-ea12-4a5f-a1d9-ba39f9e34c95"),
+                            ProductName = "Licensed Plastic Table",
                             Status = 0,
-                            UnitPrice = 909.67m,
-                            UnitsInStock = (short)7743
+                            UnitPrice = 442.70m,
+                            UnitsInStock = (short)5017
                         },
                         new
                         {
                             Id = 66,
                             CategoryId = 7,
                             CreatedComputerName = "DESKTOP-I9V1GOS",
-                            CreatedDate = new DateTime(2023, 9, 7, 11, 8, 19, 677, DateTimeKind.Local).AddTicks(1698),
+                            CreatedDate = new DateTime(2023, 9, 8, 14, 45, 26, 455, DateTimeKind.Local).AddTicks(5712),
                             CreatedIpAddress = "192.161.1.1",
-                            Description = "Licensed",
-                            MasterID = new Guid("556e5f60-f74b-4412-bf9f-b9b2f7e22cfd"),
-                            ProductName = "Generic Fresh Tuna",
+                            Description = "Gorgeous",
+                            MasterID = new Guid("abe83211-3719-49ae-96cb-8d3f7b89b3a1"),
+                            ProductName = "Tasty Plastic Keyboard",
                             Status = 0,
-                            UnitPrice = 931.81m,
-                            UnitsInStock = (short)9983
+                            UnitPrice = 24.06m,
+                            UnitsInStock = (short)6742
                         },
                         new
                         {
                             Id = 67,
                             CategoryId = 7,
                             CreatedComputerName = "DESKTOP-I9V1GOS",
-                            CreatedDate = new DateTime(2023, 9, 7, 11, 8, 19, 677, DateTimeKind.Local).AddTicks(1717),
+                            CreatedDate = new DateTime(2023, 9, 8, 14, 45, 26, 455, DateTimeKind.Local).AddTicks(5738),
                             CreatedIpAddress = "192.161.1.1",
-                            Description = "Ergonomic",
-                            MasterID = new Guid("86e474f3-665a-4539-a347-4ff7ebbfdfc6"),
-                            ProductName = "Ergonomic Soft Car",
+                            Description = "Practical",
+                            MasterID = new Guid("998b4f47-e025-4f9f-b183-3d24a7006dcb"),
+                            ProductName = "Incredible Wooden Keyboard",
                             Status = 0,
-                            UnitPrice = 700.46m,
-                            UnitsInStock = (short)5448
+                            UnitPrice = 35.77m,
+                            UnitsInStock = (short)9885
                         },
                         new
                         {
                             Id = 68,
                             CategoryId = 7,
                             CreatedComputerName = "DESKTOP-I9V1GOS",
-                            CreatedDate = new DateTime(2023, 9, 7, 11, 8, 19, 677, DateTimeKind.Local).AddTicks(1735),
+                            CreatedDate = new DateTime(2023, 9, 8, 14, 45, 26, 455, DateTimeKind.Local).AddTicks(5808),
                             CreatedIpAddress = "192.161.1.1",
-                            Description = "Gorgeous",
-                            MasterID = new Guid("f9e01207-d395-4042-aafe-63d6b79205eb"),
-                            ProductName = "Handmade Frozen Pants",
+                            Description = "Tasty",
+                            MasterID = new Guid("6bc166c4-ad80-44c0-907a-0c5280b8ff6b"),
+                            ProductName = "Handmade Metal Ball",
                             Status = 0,
-                            UnitPrice = 267.41m,
-                            UnitsInStock = (short)6400
+                            UnitPrice = 802.65m,
+                            UnitsInStock = (short)417
                         },
                         new
                         {
                             Id = 69,
                             CategoryId = 7,
                             CreatedComputerName = "DESKTOP-I9V1GOS",
-                            CreatedDate = new DateTime(2023, 9, 7, 11, 8, 19, 677, DateTimeKind.Local).AddTicks(1751),
+                            CreatedDate = new DateTime(2023, 9, 8, 14, 45, 26, 455, DateTimeKind.Local).AddTicks(5833),
                             CreatedIpAddress = "192.161.1.1",
-                            Description = "Intelligent",
-                            MasterID = new Guid("8b256d20-956a-4426-b8a1-a8776fac2597"),
-                            ProductName = "Licensed Fresh Hat",
+                            Description = "Small",
+                            MasterID = new Guid("6161ac04-bcb3-40a4-96a9-eadc6e71be9b"),
+                            ProductName = "Incredible Metal Shoes",
                             Status = 0,
-                            UnitPrice = 605.79m,
-                            UnitsInStock = (short)9026
+                            UnitPrice = 10.75m,
+                            UnitsInStock = (short)3761
                         },
                         new
                         {
                             Id = 70,
                             CategoryId = 7,
                             CreatedComputerName = "DESKTOP-I9V1GOS",
-                            CreatedDate = new DateTime(2023, 9, 7, 11, 8, 19, 677, DateTimeKind.Local).AddTicks(1768),
+                            CreatedDate = new DateTime(2023, 9, 8, 14, 45, 26, 455, DateTimeKind.Local).AddTicks(5859),
                             CreatedIpAddress = "192.161.1.1",
-                            Description = "Small",
-                            MasterID = new Guid("d4ef796e-a397-42d6-a243-0298179b0dd1"),
-                            ProductName = "Small Steel Salad",
+                            Description = "Licensed",
+                            MasterID = new Guid("5a1a98ad-38ae-46c5-b898-ada3516f93b2"),
+                            ProductName = "Intelligent Wooden Bacon",
                             Status = 0,
-                            UnitPrice = 374.28m,
-                            UnitsInStock = (short)1558
+                            UnitPrice = 746.04m,
+                            UnitsInStock = (short)3679
                         },
                         new
                         {
                             Id = 71,
                             CategoryId = 8,
                             CreatedComputerName = "DESKTOP-I9V1GOS",
-                            CreatedDate = new DateTime(2023, 9, 7, 11, 8, 19, 677, DateTimeKind.Local).AddTicks(1787),
+                            CreatedDate = new DateTime(2023, 9, 8, 14, 45, 26, 455, DateTimeKind.Local).AddTicks(5885),
                             CreatedIpAddress = "192.161.1.1",
-                            Description = "Gorgeous",
-                            MasterID = new Guid("ab1c3ea4-c762-41ab-9872-fbd79db8f7e2"),
-                            ProductName = "Unbranded Frozen Hat",
+                            Description = "Handcrafted",
+                            MasterID = new Guid("b3092c0b-e51f-48f9-8800-4e56031a5f47"),
+                            ProductName = "Gorgeous Wooden Bike",
                             Status = 0,
-                            UnitPrice = 649.89m,
-                            UnitsInStock = (short)2701
+                            UnitPrice = 520.51m,
+                            UnitsInStock = (short)4834
                         },
                         new
                         {
                             Id = 72,
                             CategoryId = 8,
                             CreatedComputerName = "DESKTOP-I9V1GOS",
-                            CreatedDate = new DateTime(2023, 9, 7, 11, 8, 19, 677, DateTimeKind.Local).AddTicks(1803),
+                            CreatedDate = new DateTime(2023, 9, 8, 14, 45, 26, 455, DateTimeKind.Local).AddTicks(5909),
                             CreatedIpAddress = "192.161.1.1",
                             Description = "Ergonomic",
-                            MasterID = new Guid("0da53bcc-5e62-46e1-b552-fdc941ae1de4"),
-                            ProductName = "Sleek Cotton Hat",
+                            MasterID = new Guid("87f37bd7-d3ac-456f-9e30-1ffc6d4abcb1"),
+                            ProductName = "Small Granite Salad",
                             Status = 0,
-                            UnitPrice = 435.20m,
-                            UnitsInStock = (short)7023
+                            UnitPrice = 115.02m,
+                            UnitsInStock = (short)3493
                         },
                         new
                         {
                             Id = 73,
                             CategoryId = 8,
                             CreatedComputerName = "DESKTOP-I9V1GOS",
-                            CreatedDate = new DateTime(2023, 9, 7, 11, 8, 19, 677, DateTimeKind.Local).AddTicks(1820),
+                            CreatedDate = new DateTime(2023, 9, 8, 14, 45, 26, 455, DateTimeKind.Local).AddTicks(5933),
                             CreatedIpAddress = "192.161.1.1",
-                            Description = "Awesome",
-                            MasterID = new Guid("cab55d4b-eb63-4cb3-a174-b777800f04da"),
-                            ProductName = "Handmade Steel Car",
+                            Description = "Refined",
+                            MasterID = new Guid("c204338a-27c8-4898-adf0-307fbcb3a06a"),
+                            ProductName = "Intelligent Wooden Keyboard",
                             Status = 0,
-                            UnitPrice = 771.54m,
-                            UnitsInStock = (short)139
+                            UnitPrice = 988.96m,
+                            UnitsInStock = (short)2650
                         },
                         new
                         {
                             Id = 74,
                             CategoryId = 8,
                             CreatedComputerName = "DESKTOP-I9V1GOS",
-                            CreatedDate = new DateTime(2023, 9, 7, 11, 8, 19, 677, DateTimeKind.Local).AddTicks(1835),
+                            CreatedDate = new DateTime(2023, 9, 8, 14, 45, 26, 455, DateTimeKind.Local).AddTicks(5965),
                             CreatedIpAddress = "192.161.1.1",
-                            Description = "Handcrafted",
-                            MasterID = new Guid("251e5cf3-edaf-4b2a-9ec8-da2acfaec574"),
-                            ProductName = "Awesome Steel Towels",
+                            Description = "Generic",
+                            MasterID = new Guid("133d495b-c638-43fb-a3ed-074886cdf550"),
+                            ProductName = "Generic Granite Chair",
                             Status = 0,
-                            UnitPrice = 44.33m,
-                            UnitsInStock = (short)7226
+                            UnitPrice = 444.77m,
+                            UnitsInStock = (short)8431
                         },
                         new
                         {
                             Id = 75,
                             CategoryId = 8,
                             CreatedComputerName = "DESKTOP-I9V1GOS",
-                            CreatedDate = new DateTime(2023, 9, 7, 11, 8, 19, 677, DateTimeKind.Local).AddTicks(1851),
+                            CreatedDate = new DateTime(2023, 9, 8, 14, 45, 26, 455, DateTimeKind.Local).AddTicks(5990),
                             CreatedIpAddress = "192.161.1.1",
-                            Description = "Practical",
-                            MasterID = new Guid("55ed92a2-7d14-4bcd-b3d4-2802a07a1773"),
-                            ProductName = "Intelligent Granite Bike",
+                            Description = "Incredible",
+                            MasterID = new Guid("7b050d86-b632-4121-9a94-0b1022831bea"),
+                            ProductName = "Rustic Rubber Shoes",
                             Status = 0,
-                            UnitPrice = 321.50m,
-                            UnitsInStock = (short)5295
+                            UnitPrice = 338.52m,
+                            UnitsInStock = (short)5192
                         },
                         new
                         {
                             Id = 76,
                             CategoryId = 8,
                             CreatedComputerName = "DESKTOP-I9V1GOS",
-                            CreatedDate = new DateTime(2023, 9, 7, 11, 8, 19, 677, DateTimeKind.Local).AddTicks(1888),
+                            CreatedDate = new DateTime(2023, 9, 8, 14, 45, 26, 455, DateTimeKind.Local).AddTicks(6013),
                             CreatedIpAddress = "192.161.1.1",
-                            Description = "Handcrafted",
-                            MasterID = new Guid("b4d1080b-1c38-4480-a325-0919e3f0238d"),
-                            ProductName = "Awesome Metal Ball",
+                            Description = "Practical",
+                            MasterID = new Guid("68abcd97-2105-427a-be36-547789c90d29"),
+                            ProductName = "Unbranded Soft Mouse",
                             Status = 0,
-                            UnitPrice = 785.60m,
-                            UnitsInStock = (short)5745
+                            UnitPrice = 385.84m,
+                            UnitsInStock = (short)9069
                         },
                         new
                         {
                             Id = 77,
                             CategoryId = 8,
                             CreatedComputerName = "DESKTOP-I9V1GOS",
-                            CreatedDate = new DateTime(2023, 9, 7, 11, 8, 19, 677, DateTimeKind.Local).AddTicks(1906),
+                            CreatedDate = new DateTime(2023, 9, 8, 14, 45, 26, 455, DateTimeKind.Local).AddTicks(6041),
                             CreatedIpAddress = "192.161.1.1",
-                            Description = "Incredible",
-                            MasterID = new Guid("b7335755-dd50-43d8-9e21-cce767563524"),
-                            ProductName = "Rustic Steel Keyboard",
+                            Description = "Practical",
+                            MasterID = new Guid("69cab37a-8876-4f9f-bdc6-71cd359b6445"),
+                            ProductName = "Small Metal Hat",
                             Status = 0,
-                            UnitPrice = 93.00m,
-                            UnitsInStock = (short)4664
+                            UnitPrice = 242.31m,
+                            UnitsInStock = (short)4166
                         },
                         new
                         {
                             Id = 78,
                             CategoryId = 8,
                             CreatedComputerName = "DESKTOP-I9V1GOS",
-                            CreatedDate = new DateTime(2023, 9, 7, 11, 8, 19, 677, DateTimeKind.Local).AddTicks(1922),
+                            CreatedDate = new DateTime(2023, 9, 8, 14, 45, 26, 455, DateTimeKind.Local).AddTicks(6147),
                             CreatedIpAddress = "192.161.1.1",
-                            Description = "Gorgeous",
-                            MasterID = new Guid("9c51bd65-c11a-4cbe-96eb-12a824323dad"),
-                            ProductName = "Refined Steel Salad",
+                            Description = "Awesome",
+                            MasterID = new Guid("f7b9da97-c056-4908-abb4-b7970bc36ba0"),
+                            ProductName = "Fantastic Concrete Towels",
                             Status = 0,
-                            UnitPrice = 24.99m,
-                            UnitsInStock = (short)2131
+                            UnitPrice = 341.55m,
+                            UnitsInStock = (short)8636
                         },
                         new
                         {
                             Id = 79,
                             CategoryId = 8,
                             CreatedComputerName = "DESKTOP-I9V1GOS",
-                            CreatedDate = new DateTime(2023, 9, 7, 11, 8, 19, 677, DateTimeKind.Local).AddTicks(1940),
+                            CreatedDate = new DateTime(2023, 9, 8, 14, 45, 26, 455, DateTimeKind.Local).AddTicks(6172),
                             CreatedIpAddress = "192.161.1.1",
-                            Description = "Handcrafted",
-                            MasterID = new Guid("0dc3598a-1f33-4858-a454-5428d5da0486"),
-                            ProductName = "Sleek Cotton Computer",
+                            Description = "Licensed",
+                            MasterID = new Guid("b596fafb-f114-4934-888e-6958513d6edb"),
+                            ProductName = "Gorgeous Soft Hat",
                             Status = 0,
-                            UnitPrice = 973.59m,
-                            UnitsInStock = (short)3173
+                            UnitPrice = 436.09m,
+                            UnitsInStock = (short)3796
                         },
                         new
                         {
                             Id = 80,
                             CategoryId = 8,
                             CreatedComputerName = "DESKTOP-I9V1GOS",
-                            CreatedDate = new DateTime(2023, 9, 7, 11, 8, 19, 677, DateTimeKind.Local).AddTicks(1957),
+                            CreatedDate = new DateTime(2023, 9, 8, 14, 45, 26, 455, DateTimeKind.Local).AddTicks(6199),
                             CreatedIpAddress = "192.161.1.1",
-                            Description = "Practical",
-                            MasterID = new Guid("2aed93ad-921d-452a-894e-a05d15976f70"),
-                            ProductName = "Fantastic Granite Keyboard",
+                            Description = "Generic",
+                            MasterID = new Guid("aeac13ce-7514-43fb-b67a-475842ea5c90"),
+                            ProductName = "Incredible Metal Mouse",
                             Status = 0,
-                            UnitPrice = 269.75m,
-                            UnitsInStock = (short)9783
+                            UnitPrice = 679.95m,
+                            UnitsInStock = (short)1701
                         },
                         new
                         {
                             Id = 81,
                             CategoryId = 9,
                             CreatedComputerName = "DESKTOP-I9V1GOS",
-                            CreatedDate = new DateTime(2023, 9, 7, 11, 8, 19, 677, DateTimeKind.Local).AddTicks(1974),
+                            CreatedDate = new DateTime(2023, 9, 8, 14, 45, 26, 455, DateTimeKind.Local).AddTicks(6224),
                             CreatedIpAddress = "192.161.1.1",
-                            Description = "Unbranded",
-                            MasterID = new Guid("fbfe24cc-5fa7-4154-bd8d-f21368766c4e"),
-                            ProductName = "Generic Plastic Chair",
+                            Description = "Small",
+                            MasterID = new Guid("81e776ff-b4f2-4df7-bf05-03859c10e4ad"),
+                            ProductName = "Small Rubber Chicken",
                             Status = 0,
-                            UnitPrice = 127.87m,
-                            UnitsInStock = (short)8041
+                            UnitPrice = 711.62m,
+                            UnitsInStock = (short)5153
                         },
                         new
                         {
                             Id = 82,
                             CategoryId = 9,
                             CreatedComputerName = "DESKTOP-I9V1GOS",
-                            CreatedDate = new DateTime(2023, 9, 7, 11, 8, 19, 677, DateTimeKind.Local).AddTicks(1990),
+                            CreatedDate = new DateTime(2023, 9, 8, 14, 45, 26, 455, DateTimeKind.Local).AddTicks(6255),
                             CreatedIpAddress = "192.161.1.1",
-                            Description = "Intelligent",
-                            MasterID = new Guid("713f1613-2519-469a-afa5-baf9e711a984"),
-                            ProductName = "Handcrafted Wooden Chair",
+                            Description = "Licensed",
+                            MasterID = new Guid("89691c92-0159-4032-8470-bc5dd7055e6b"),
+                            ProductName = "Handmade Plastic Fish",
                             Status = 0,
-                            UnitPrice = 596.44m,
-                            UnitsInStock = (short)1482
+                            UnitPrice = 427.47m,
+                            UnitsInStock = (short)877
                         },
                         new
                         {
                             Id = 83,
                             CategoryId = 9,
                             CreatedComputerName = "DESKTOP-I9V1GOS",
-                            CreatedDate = new DateTime(2023, 9, 7, 11, 8, 19, 677, DateTimeKind.Local).AddTicks(2007),
+                            CreatedDate = new DateTime(2023, 9, 8, 14, 45, 26, 455, DateTimeKind.Local).AddTicks(6280),
                             CreatedIpAddress = "192.161.1.1",
-                            Description = "Sleek",
-                            MasterID = new Guid("6b41648a-1d30-4a9d-814b-59230c4ec8f6"),
-                            ProductName = "Rustic Fresh Soap",
+                            Description = "Gorgeous",
+                            MasterID = new Guid("e2066d4f-caaf-40f9-aac5-199ff04cc083"),
+                            ProductName = "Incredible Granite Soap",
                             Status = 0,
-                            UnitPrice = 882.83m,
-                            UnitsInStock = (short)6286
+                            UnitPrice = 132.06m,
+                            UnitsInStock = (short)6873
                         },
                         new
                         {
                             Id = 84,
                             CategoryId = 9,
                             CreatedComputerName = "DESKTOP-I9V1GOS",
-                            CreatedDate = new DateTime(2023, 9, 7, 11, 8, 19, 677, DateTimeKind.Local).AddTicks(2023),
+                            CreatedDate = new DateTime(2023, 9, 8, 14, 45, 26, 455, DateTimeKind.Local).AddTicks(6306),
                             CreatedIpAddress = "192.161.1.1",
-                            Description = "Refined",
-                            MasterID = new Guid("27f57eeb-dfe8-4444-9a00-065a37e04a7f"),
-                            ProductName = "Sleek Granite Shoes",
+                            Description = "Fantastic",
+                            MasterID = new Guid("c624fd3d-b50d-4407-b411-bb894902bf79"),
+                            ProductName = "Incredible Concrete Shirt",
                             Status = 0,
-                            UnitPrice = 18.97m,
-                            UnitsInStock = (short)478
+                            UnitPrice = 844.60m,
+                            UnitsInStock = (short)1788
                         },
                         new
                         {
                             Id = 85,
                             CategoryId = 9,
                             CreatedComputerName = "DESKTOP-I9V1GOS",
-                            CreatedDate = new DateTime(2023, 9, 7, 11, 8, 19, 677, DateTimeKind.Local).AddTicks(2040),
+                            CreatedDate = new DateTime(2023, 9, 8, 14, 45, 26, 455, DateTimeKind.Local).AddTicks(6331),
                             CreatedIpAddress = "192.161.1.1",
-                            Description = "Small",
-                            MasterID = new Guid("6ff0354a-769d-4f4e-88fe-4e38582d21fc"),
-                            ProductName = "Licensed Soft Shoes",
+                            Description = "Licensed",
+                            MasterID = new Guid("853c3995-206f-4d69-95cc-6296de5b1aa9"),
+                            ProductName = "Awesome Fresh Towels",
                             Status = 0,
-                            UnitPrice = 169.63m,
-                            UnitsInStock = (short)6231
+                            UnitPrice = 548.23m,
+                            UnitsInStock = (short)9884
                         },
                         new
                         {
                             Id = 86,
                             CategoryId = 9,
                             CreatedComputerName = "DESKTOP-I9V1GOS",
-                            CreatedDate = new DateTime(2023, 9, 7, 11, 8, 19, 677, DateTimeKind.Local).AddTicks(2075),
+                            CreatedDate = new DateTime(2023, 9, 8, 14, 45, 26, 455, DateTimeKind.Local).AddTicks(6357),
                             CreatedIpAddress = "192.161.1.1",
-                            Description = "Gorgeous",
-                            MasterID = new Guid("bb190316-0ce2-4168-ad32-4219cc2ec3c8"),
-                            ProductName = "Small Concrete Cheese",
+                            Description = "Incredible",
+                            MasterID = new Guid("0790727b-3722-4ae8-9599-6eb22793f320"),
+                            ProductName = "Gorgeous Plastic Fish",
                             Status = 0,
-                            UnitPrice = 131.26m,
-                            UnitsInStock = (short)9916
+                            UnitPrice = 204.05m,
+                            UnitsInStock = (short)896
                         },
                         new
                         {
                             Id = 87,
                             CategoryId = 9,
                             CreatedComputerName = "DESKTOP-I9V1GOS",
-                            CreatedDate = new DateTime(2023, 9, 7, 11, 8, 19, 677, DateTimeKind.Local).AddTicks(2094),
+                            CreatedDate = new DateTime(2023, 9, 8, 14, 45, 26, 455, DateTimeKind.Local).AddTicks(6412),
                             CreatedIpAddress = "192.161.1.1",
-                            Description = "Handcrafted",
-                            MasterID = new Guid("71b351c7-51aa-4696-a2a3-685ca46f4454"),
-                            ProductName = "Awesome Metal Ball",
+                            Description = "Gorgeous",
+                            MasterID = new Guid("c46b3f01-d393-4cd7-9209-5f85feb84aad"),
+                            ProductName = "Licensed Soft Soap",
                             Status = 0,
-                            UnitPrice = 652.92m,
-                            UnitsInStock = (short)7354
+                            UnitPrice = 180.01m,
+                            UnitsInStock = (short)8302
                         },
                         new
                         {
                             Id = 88,
                             CategoryId = 9,
                             CreatedComputerName = "DESKTOP-I9V1GOS",
-                            CreatedDate = new DateTime(2023, 9, 7, 11, 8, 19, 677, DateTimeKind.Local).AddTicks(2111),
+                            CreatedDate = new DateTime(2023, 9, 8, 14, 45, 26, 455, DateTimeKind.Local).AddTicks(6440),
                             CreatedIpAddress = "192.161.1.1",
-                            Description = "Practical",
-                            MasterID = new Guid("cead07df-48a3-41e1-b487-68c55b3a5d3a"),
-                            ProductName = "Sleek Concrete Towels",
+                            Description = "Small",
+                            MasterID = new Guid("e8189a8e-afb8-454a-aa02-9de8e40740c3"),
+                            ProductName = "Rustic Steel Tuna",
                             Status = 0,
-                            UnitPrice = 822.16m,
-                            UnitsInStock = (short)6452
+                            UnitPrice = 319.75m,
+                            UnitsInStock = (short)1010
                         },
                         new
                         {
                             Id = 89,
                             CategoryId = 9,
                             CreatedComputerName = "DESKTOP-I9V1GOS",
-                            CreatedDate = new DateTime(2023, 9, 7, 11, 8, 19, 677, DateTimeKind.Local).AddTicks(2127),
+                            CreatedDate = new DateTime(2023, 9, 8, 14, 45, 26, 455, DateTimeKind.Local).AddTicks(6466),
                             CreatedIpAddress = "192.161.1.1",
                             Description = "Awesome",
-                            MasterID = new Guid("e466a062-5b14-4fa8-b200-a7fd93972107"),
-                            ProductName = "Fantastic Metal Fish",
+                            MasterID = new Guid("708a0231-dbef-49dc-8855-623987884039"),
+                            ProductName = "Generic Steel Towels",
                             Status = 0,
-                            UnitPrice = 735.47m,
-                            UnitsInStock = (short)4880
+                            UnitPrice = 563.50m,
+                            UnitsInStock = (short)9790
                         },
                         new
                         {
                             Id = 90,
                             CategoryId = 9,
                             CreatedComputerName = "DESKTOP-I9V1GOS",
-                            CreatedDate = new DateTime(2023, 9, 7, 11, 8, 19, 677, DateTimeKind.Local).AddTicks(2143),
+                            CreatedDate = new DateTime(2023, 9, 8, 14, 45, 26, 455, DateTimeKind.Local).AddTicks(6492),
                             CreatedIpAddress = "192.161.1.1",
-                            Description = "Awesome",
-                            MasterID = new Guid("5b21d299-b4a6-460e-b83c-fd1ab4fee2f6"),
-                            ProductName = "Incredible Soft Pants",
+                            Description = "Rustic",
+                            MasterID = new Guid("c69416dc-81b7-4fe1-99de-d100884fed10"),
+                            ProductName = "Ergonomic Soft Computer",
                             Status = 0,
-                            UnitPrice = 87.18m,
-                            UnitsInStock = (short)2803
+                            UnitPrice = 964.50m,
+                            UnitsInStock = (short)28
                         },
                         new
                         {
                             Id = 91,
                             CategoryId = 10,
                             CreatedComputerName = "DESKTOP-I9V1GOS",
-                            CreatedDate = new DateTime(2023, 9, 7, 11, 8, 19, 677, DateTimeKind.Local).AddTicks(2159),
+                            CreatedDate = new DateTime(2023, 9, 8, 14, 45, 26, 455, DateTimeKind.Local).AddTicks(6516),
                             CreatedIpAddress = "192.161.1.1",
-                            Description = "Handcrafted",
-                            MasterID = new Guid("1bdd5024-483b-4ed4-9bc4-1236d01cdad2"),
-                            ProductName = "Small Soft Ball",
+                            Description = "Ergonomic",
+                            MasterID = new Guid("4540e3ad-fc05-45d9-be77-cc25b0216d37"),
+                            ProductName = "Generic Plastic Computer",
                             Status = 0,
-                            UnitPrice = 366.46m,
-                            UnitsInStock = (short)612
+                            UnitPrice = 543.17m,
+                            UnitsInStock = (short)1716
                         },
                         new
                         {
                             Id = 92,
                             CategoryId = 10,
                             CreatedComputerName = "DESKTOP-I9V1GOS",
-                            CreatedDate = new DateTime(2023, 9, 7, 11, 8, 19, 677, DateTimeKind.Local).AddTicks(2175),
+                            CreatedDate = new DateTime(2023, 9, 8, 14, 45, 26, 455, DateTimeKind.Local).AddTicks(6540),
                             CreatedIpAddress = "192.161.1.1",
-                            Description = "Licensed",
-                            MasterID = new Guid("282e4142-ac5d-4354-8ae8-c91369b9794b"),
-                            ProductName = "Licensed Fresh Cheese",
+                            Description = "Small",
+                            MasterID = new Guid("359d6942-1a6f-4099-be6e-fc8a00d02d27"),
+                            ProductName = "Unbranded Wooden Soap",
                             Status = 0,
-                            UnitPrice = 730.87m,
-                            UnitsInStock = (short)8558
+                            UnitPrice = 56.38m,
+                            UnitsInStock = (short)2058
                         },
                         new
                         {
                             Id = 93,
                             CategoryId = 10,
                             CreatedComputerName = "DESKTOP-I9V1GOS",
-                            CreatedDate = new DateTime(2023, 9, 7, 11, 8, 19, 677, DateTimeKind.Local).AddTicks(2192),
+                            CreatedDate = new DateTime(2023, 9, 8, 14, 45, 26, 455, DateTimeKind.Local).AddTicks(6565),
                             CreatedIpAddress = "192.161.1.1",
-                            Description = "Generic",
-                            MasterID = new Guid("41ebce6e-8352-45ca-8204-0ce3c63d517b"),
-                            ProductName = "Rustic Frozen Sausages",
+                            Description = "Gorgeous",
+                            MasterID = new Guid("4256c6cc-350d-415c-b987-db8e3c1f6563"),
+                            ProductName = "Practical Wooden Pants",
                             Status = 0,
-                            UnitPrice = 384.42m,
-                            UnitsInStock = (short)6586
+                            UnitPrice = 526.33m,
+                            UnitsInStock = (short)1372
                         },
                         new
                         {
                             Id = 94,
                             CategoryId = 10,
                             CreatedComputerName = "DESKTOP-I9V1GOS",
-                            CreatedDate = new DateTime(2023, 9, 7, 11, 8, 19, 677, DateTimeKind.Local).AddTicks(2208),
+                            CreatedDate = new DateTime(2023, 9, 8, 14, 45, 26, 455, DateTimeKind.Local).AddTicks(6592),
                             CreatedIpAddress = "192.161.1.1",
-                            Description = "Practical",
-                            MasterID = new Guid("4178ea2b-862f-4ed6-aaa4-8801c7750194"),
-                            ProductName = "Intelligent Rubber Computer",
+                            Description = "Small",
+                            MasterID = new Guid("95725a67-e0c2-427b-b522-0b937b2ec9d1"),
+                            ProductName = "Gorgeous Granite Soap",
                             Status = 0,
-                            UnitPrice = 678.82m,
-                            UnitsInStock = (short)2295
+                            UnitPrice = 330.27m,
+                            UnitsInStock = (short)7226
                         },
                         new
                         {
                             Id = 95,
                             CategoryId = 10,
                             CreatedComputerName = "DESKTOP-I9V1GOS",
-                            CreatedDate = new DateTime(2023, 9, 7, 11, 8, 19, 677, DateTimeKind.Local).AddTicks(2226),
+                            CreatedDate = new DateTime(2023, 9, 8, 14, 45, 26, 455, DateTimeKind.Local).AddTicks(6619),
                             CreatedIpAddress = "192.161.1.1",
-                            Description = "Gorgeous",
-                            MasterID = new Guid("24db758c-a108-4525-96e9-012a8661fc24"),
-                            ProductName = "Awesome Frozen Chips",
+                            Description = "Handcrafted",
+                            MasterID = new Guid("3b8c8629-f121-4340-885f-d62f8f33a9c3"),
+                            ProductName = "Licensed Steel Sausages",
                             Status = 0,
-                            UnitPrice = 24.80m,
-                            UnitsInStock = (short)7880
+                            UnitPrice = 321.81m,
+                            UnitsInStock = (short)4027
                         },
                         new
                         {
                             Id = 96,
                             CategoryId = 10,
                             CreatedComputerName = "DESKTOP-I9V1GOS",
-                            CreatedDate = new DateTime(2023, 9, 7, 11, 8, 19, 677, DateTimeKind.Local).AddTicks(2261),
+                            CreatedDate = new DateTime(2023, 9, 8, 14, 45, 26, 455, DateTimeKind.Local).AddTicks(6643),
                             CreatedIpAddress = "192.161.1.1",
-                            Description = "Rustic",
-                            MasterID = new Guid("eba0ef50-6f73-420d-8635-4d091f13e7cf"),
-                            ProductName = "Tasty Wooden Pants",
+                            Description = "Sleek",
+                            MasterID = new Guid("dee1af6b-565d-4364-a883-32ea1ebb5fe3"),
+                            ProductName = "Gorgeous Metal Shoes",
                             Status = 0,
-                            UnitPrice = 385.80m,
-                            UnitsInStock = (short)7104
+                            UnitPrice = 860.75m,
+                            UnitsInStock = (short)9538
                         },
                         new
                         {
                             Id = 97,
                             CategoryId = 10,
                             CreatedComputerName = "DESKTOP-I9V1GOS",
-                            CreatedDate = new DateTime(2023, 9, 7, 11, 8, 19, 677, DateTimeKind.Local).AddTicks(2280),
+                            CreatedDate = new DateTime(2023, 9, 8, 14, 45, 26, 455, DateTimeKind.Local).AddTicks(6724),
                             CreatedIpAddress = "192.161.1.1",
-                            Description = "Unbranded",
-                            MasterID = new Guid("b5b92ae2-94f3-4a04-887e-af207e329911"),
-                            ProductName = "Ergonomic Fresh Pants",
+                            Description = "Incredible",
+                            MasterID = new Guid("ce2577a1-5381-4a58-99a9-ba66c1a71fc9"),
+                            ProductName = "Small Concrete Computer",
                             Status = 0,
-                            UnitPrice = 245.65m,
-                            UnitsInStock = (short)6836
+                            UnitPrice = 876.48m,
+                            UnitsInStock = (short)2419
                         },
                         new
                         {
                             Id = 98,
                             CategoryId = 10,
                             CreatedComputerName = "DESKTOP-I9V1GOS",
-                            CreatedDate = new DateTime(2023, 9, 7, 11, 8, 19, 677, DateTimeKind.Local).AddTicks(2297),
+                            CreatedDate = new DateTime(2023, 9, 8, 14, 45, 26, 455, DateTimeKind.Local).AddTicks(6752),
                             CreatedIpAddress = "192.161.1.1",
-                            Description = "Handmade",
-                            MasterID = new Guid("963c63ac-c3c4-4a3f-93a5-fc0a789127d5"),
-                            ProductName = "Gorgeous Granite Chair",
+                            Description = "Licensed",
+                            MasterID = new Guid("50339122-33e8-485c-ba8d-19a152865a2f"),
+                            ProductName = "Generic Cotton Salad",
                             Status = 0,
-                            UnitPrice = 759.05m,
-                            UnitsInStock = (short)1584
+                            UnitPrice = 273.17m,
+                            UnitsInStock = (short)7395
                         },
                         new
                         {
                             Id = 99,
                             CategoryId = 10,
                             CreatedComputerName = "DESKTOP-I9V1GOS",
-                            CreatedDate = new DateTime(2023, 9, 7, 11, 8, 19, 677, DateTimeKind.Local).AddTicks(2313),
+                            CreatedDate = new DateTime(2023, 9, 8, 14, 45, 26, 455, DateTimeKind.Local).AddTicks(6777),
                             CreatedIpAddress = "192.161.1.1",
-                            Description = "Awesome",
-                            MasterID = new Guid("68002253-94bc-4fd1-9d9e-34a4f75ae3d9"),
-                            ProductName = "Small Frozen Chips",
+                            Description = "Handcrafted",
+                            MasterID = new Guid("4c18d001-58bb-4d10-a871-ef7586a0700e"),
+                            ProductName = "Handcrafted Cotton Ball",
                             Status = 0,
-                            UnitPrice = 787.59m,
-                            UnitsInStock = (short)8158
+                            UnitPrice = 193.39m,
+                            UnitsInStock = (short)7563
                         },
                         new
                         {
                             Id = 100,
                             CategoryId = 10,
                             CreatedComputerName = "DESKTOP-I9V1GOS",
-                            CreatedDate = new DateTime(2023, 9, 7, 11, 8, 19, 677, DateTimeKind.Local).AddTicks(2329),
+                            CreatedDate = new DateTime(2023, 9, 8, 14, 45, 26, 455, DateTimeKind.Local).AddTicks(6802),
                             CreatedIpAddress = "192.161.1.1",
-                            Description = "Refined",
-                            MasterID = new Guid("460bf6c8-3a05-42e3-a92d-829fb123737c"),
-                            ProductName = "Intelligent Cotton Chair",
+                            Description = "Generic",
+                            MasterID = new Guid("fc56b5df-34f7-4052-be08-a8658e190855"),
+                            ProductName = "Gorgeous Frozen Bike",
                             Status = 0,
-                            UnitPrice = 606.87m,
-                            UnitsInStock = (short)910
+                            UnitPrice = 25.58m,
+                            UnitsInStock = (short)3969
                         });
+                });
+
+            modelBuilder.Entity("ECommerce.Entity.Entity.Shipper", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Address")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("CompanyName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("CreatedComputerName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("CreatedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("CreatedIpAddress")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<Guid>("MasterID")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("PhoneNumber")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("Status")
+                        .HasColumnType("int");
+
+                    b.Property<string>("UpdatedComputerName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime?>("UpdatedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("UpdatedIpAddress")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Shippers");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
@@ -1842,6 +1986,40 @@ namespace ECommerce.MVC.Migrations
                     b.ToTable("AspNetUserTokens", (string)null);
                 });
 
+            modelBuilder.Entity("ECommerce.Entity.Entity.Order", b =>
+                {
+                    b.HasOne("ECommerce.Entity.Entity.Shipper", "Shipper")
+                        .WithMany("Orders")
+                        .HasForeignKey("ShipperId");
+
+                    b.HasOne("Microsoft.AspNetCore.Identity.IdentityUser", "User")
+                        .WithMany()
+                        .HasForeignKey("UserId");
+
+                    b.Navigation("Shipper");
+
+                    b.Navigation("User");
+                });
+
+            modelBuilder.Entity("ECommerce.Entity.Entity.OrderDetail", b =>
+                {
+                    b.HasOne("ECommerce.Entity.Entity.Order", "Order")
+                        .WithMany("OrderDetails")
+                        .HasForeignKey("OrderId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("ECommerce.Entity.Entity.Product", "Product")
+                        .WithMany("OrderDetails")
+                        .HasForeignKey("ProductId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Order");
+
+                    b.Navigation("Product");
+                });
+
             modelBuilder.Entity("ECommerce.Entity.Entity.Product", b =>
                 {
                     b.HasOne("ECommerce.Entity.Entity.Category", "Category")
@@ -1907,6 +2085,21 @@ namespace ECommerce.MVC.Migrations
             modelBuilder.Entity("ECommerce.Entity.Entity.Category", b =>
                 {
                     b.Navigation("Products");
+                });
+
+            modelBuilder.Entity("ECommerce.Entity.Entity.Order", b =>
+                {
+                    b.Navigation("OrderDetails");
+                });
+
+            modelBuilder.Entity("ECommerce.Entity.Entity.Product", b =>
+                {
+                    b.Navigation("OrderDetails");
+                });
+
+            modelBuilder.Entity("ECommerce.Entity.Entity.Shipper", b =>
+                {
+                    b.Navigation("Orders");
                 });
 #pragma warning restore 612, 618
         }
