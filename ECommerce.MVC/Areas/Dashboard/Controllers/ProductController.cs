@@ -32,7 +32,7 @@ namespace ECommerce.MVC.Areas.Dashboard.Controllers
             {
                 Text = x.CategoryName,
                 Value = x.Id.ToString()
-            }); ;
+            }); 
             return View();
         }
 

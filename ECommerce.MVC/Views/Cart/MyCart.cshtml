@@ -1,4 +1,5 @@
-﻿
+﻿@*@model ECommerce.MVC.Areas.Dashboard.Models.ViewModels.OrderVM*@
+
 @{
     var sepet = SessionHelper.GetProductFromJson<Cart>(Context.Session, "sepet");
     ViewData["Title"] = "MyCart";
@@ -6,50 +7,78 @@
     decimal? totalPrice = 0;
     //todo: Güncelleme ve silme işlemleri yapılacak.
 }
-
-<div class="row">
-    <div class="col-md-9">
-        <table class="table table-hover">
-            <thead>
-                <tr>
-                    <th>Ürün Adı</th>
-                    <th>Birim Fiyat</th>
-                    <th>Adet</th>
-                    <th>Ara Toplam</th>
-                </tr>
-            </thead>
-            <tbody>
-                @foreach (var item in sepet._myCart)
-                {
-                    totalPrice += item.Value.SubTotal;
-                    <tr>
-                        <th>@item.Value.ProductName</th>
-                        <th>@item.Value.UnitPrice</th>
-                        <th class="d-flex">
-                            <form method="post" asp-action="UpdateCart" asp-controller="Cart">
-                                <input type="hidden" name="id" value="@item.Key" />
-                                <input type="number" name="quantity" value="@item.Value.Quantity" class="form-control" />
-                                <button type="submit" class="btn btn-warning btn-sm ms-3  ">Güncelle</button>
-                            </form>
-                        </th>
-                        <th>
-                            @item.Value.SubTotal
-                            <button class="btn btn-danger btn-sm ms-3">Sil</button>
-                        </th>
-                    </tr>
-                }
-            </tbody>
-        </table>
+<div class="card m-5">
+    <div class="card-header">
+        <h2>Sepetim</h2>
     </div>
-    <div class="col-md-3">
-        <div class="card">
-            <div class="card-body">
-                <span>Ödemeniz Gereken Toplam Tutar : </span>
-                <h1>@totalPrice TL</h1>
-                <a asp-action="Index" asp-controller="Home" class="btn btn-info mt-3">Alışverişe Devam Et</a>
-                <a asp-action="CompleteCart" asp-controller="Cart" class="btn btn-primary mt-3">Ödeme Yap</a>
+    <div class="card-body">
+        <div class="row">
+            <div class="col-md-9">
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th>Ürün Adı</th>
+                            <th>Birim Fiyat</th>
+                            <th>Adet</th>
+                            <th>Ara Toplam</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in sepet._myCart)
+                        {
+                            totalPrice += item.Value.SubTotal;
+                            <tr>
+                                <th>@item.Value.ProductName</th>
+                                <th>@item.Value.UnitPrice</th>
+                                <th>
+                                    <form method="post" asp-action="UpdateCart" asp-controller="Cart" class="d-flex">
+                                        <input type="hidden" name="id" value="@item.Key" />
+                                        <div class="col">
+                                            <input type="number" name="quantity" value="@item.Value.Quantity" class="form-control" />
+                                        </div>
+                                        <div class="col">
+                                            <button type="submit" class="btn btn-warning btn-sm ms-3">Güncelle</button>
+                                        </div>
+                                        
+                                    </form>
+                                </th>
+                                <th>
+                                    @item.Value.SubTotal
+                                    <button class="btn btn-danger btn-sm ms-3">Sil</button>
+                                </th>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="card-body">
+                        <span>Ödemeniz Gereken Toplam Tutar : </span>
+                        <h1>@totalPrice TL</h1>
+                        <a asp-action="Index" asp-controller="Home" class="btn btn-info mt-3">Alışverişe Devam Et</a>
+                        <a asp-action="CompleteCart" asp-controller="Cart" class="btn btn-primary mt-3">Ödeme Yap</a>
+                    </div>
+                </div>
             </div>
         </div>
+
+        @*<div>
+            <h3>Lütfen Kargo Firması Seçiniz :</h3>
+            <form method="post">
+                <div class="form-group">
+                    <div>
+                        <select class="form-control" asp-items="@ViewBag.Shippers" action="CompleteCart" name="choiceShipper" asp-controller="Cart" asp-for="ShipperId">
+                            <option selected="" disable>Seçiniz...</option>
+                        </select>
+                        <span asp-validation-for="ShipperId"></span>
+                    </div>
+                </div>
+            </form>
+            
+        </div>*@
     </div>
+    
 </div>
+
 

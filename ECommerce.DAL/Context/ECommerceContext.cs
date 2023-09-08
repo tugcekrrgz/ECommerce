@@ -8,8 +8,7 @@ using Microsoft.EntityFrameworkCore;
 namespace ECommerce.DAL.Context
 {
     public class ECommerceContext:IdentityDbContext
-    {
-        
+    {        
         public ECommerceContext(DbContextOptions<ECommerceContext> options):base(options)
         {
 
@@ -53,9 +52,20 @@ namespace ECommerce.DAL.Context
                 .WithOne(x => x.Shipper)
                 .HasForeignKey(x => x.ShipperId);
 
+            
             builder.Entity<Order>().Property(x => x.ShipperId).IsRequired(false);
 
+            //Shipper
+            List<Shipper> shippers = new List<Shipper>()
+            {
+                new Shipper { Id=1,CompanyName = "Aras Kargo", Address = "İstanbul/Pendik", PhoneNumber = "12345678" },
+                new Shipper { Id=2,CompanyName = "Yurtiçi Kargo", Address = "Ankara/Çankaya", PhoneNumber = "12345678" },
+                new Shipper { Id=3,CompanyName = "MNG Kargo", Address = "Kocaeli/İzmit", PhoneNumber = "12345678" },
+                new Shipper { Id=4,CompanyName = "Sürat Kargo", Address = "Sakarya/Hendek", PhoneNumber = "12345678" },
+                new Shipper { Id=5,CompanyName = "PTT Kargo", Address = "Trabzon/Beşikdüzü", PhoneNumber = "12345678" }
+            };
 
+            builder.Entity<Shipper>().HasData(shippers);      
 
 
             //todo: Ayrı bir katmana taşı.

@@ -1,11 +1,13 @@
 ﻿using ECommerce.BLL.AbstractServices;
 using ECommerce.Common;
 using ECommerce.Entity.Entity;
+using ECommerce.MVC.Areas.Dashboard.Models.ViewModels;
 using ECommerce.MVC.Models;
 using ECommerce.MVC.Utils;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using System.Diagnostics.Eventing.Reader;
 
 namespace ECommerce.MVC.Controllers
@@ -16,13 +18,15 @@ namespace ECommerce.MVC.Controllers
         private readonly UserManager<IdentityUser> _userManager;
         private readonly IOrderService _orderService;
         private readonly IOrderDetailService _orderDetailService;
+        private readonly IShipperService _shipperService;
 
-        public CartController(IProductService productService,UserManager<IdentityUser> userManager, IOrderService orderService, IOrderDetailService orderDetailService)
+        public CartController(IProductService productService,UserManager<IdentityUser> userManager, IOrderService orderService, IOrderDetailService orderDetailService,IShipperService shipperService)
         {
             _productService = productService;
             _userManager = userManager;
             _orderService = orderService;
             _orderDetailService = orderDetailService;
+            _shipperService = shipperService;
         }
         public IActionResult AddToCard(int id)
         {
@@ -68,6 +72,11 @@ namespace ECommerce.MVC.Controllers
         [Authorize]
         public IActionResult MyCart()
         {
+            ViewBag.Shippers = _shipperService.GetAllShippers().Select(x => new SelectListItem
+            {
+                Text = x.CompanyName,
+                Value = x.Id.ToString()
+            }); ;
             return View();            
         }
 
@@ -75,7 +84,7 @@ namespace ECommerce.MVC.Controllers
         public async Task<IActionResult> CompleteCart()
         {
             Cart cart = SessionHelper.GetProductFromJson<Cart>(HttpContext.Session, "sepet");
-
+            
             //Order
             Order order = new Order();
             var user = await _userManager.GetUserAsync(User);
