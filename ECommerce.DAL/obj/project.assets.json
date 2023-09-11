@@ -1231,6 +1231,9 @@
       "ECommerce.Common/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "ECommerce.Entity": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/ECommerce.Common.dll": {}
         },

@@ -1,4 +1,4 @@
-﻿namespace ECommerce.MVC.Models
+﻿namespace ECommerce.Entity.Entity
 {
     public class CartItem
     {

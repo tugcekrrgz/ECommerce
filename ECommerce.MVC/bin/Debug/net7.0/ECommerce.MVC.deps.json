@@ -2567,6 +2567,9 @@
         }
       },
       "ECommerce.Common/1.0.0": {
+        "dependencies": {
+          "ECommerce.Entity": "1.0.0"
+        },
         "runtime": {
           "ECommerce.Common.dll": {}
         }

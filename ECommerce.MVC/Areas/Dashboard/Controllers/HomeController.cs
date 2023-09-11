@@ -20,7 +20,6 @@ namespace ECommerce.MVC.Areas.Dashboard.Controllers
         }
         public IActionResult Index()
         {
-         //todo: toplam tutarı göster
             ViewBag.OrderDetails=_orderDetailService.GetAllOrderDetails();
             return View(_orderService.GetAllOrders());
         }

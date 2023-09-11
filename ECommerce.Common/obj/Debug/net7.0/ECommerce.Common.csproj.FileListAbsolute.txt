@@ -10,3 +10,6 @@ C:\Users\LENOVO\Desktop\Bilge Adam\MVC\29.08.2023\ECommerce\ECommerce.Common\obj
 C:\Users\LENOVO\Desktop\Bilge Adam\MVC\29.08.2023\ECommerce\ECommerce.Common\obj\Debug\net7.0\refint\ECommerce.Common.dll
 C:\Users\LENOVO\Desktop\Bilge Adam\MVC\29.08.2023\ECommerce\ECommerce.Common\obj\Debug\net7.0\ECommerce.Common.pdb
 C:\Users\LENOVO\Desktop\Bilge Adam\MVC\29.08.2023\ECommerce\ECommerce.Common\obj\Debug\net7.0\ref\ECommerce.Common.dll
+C:\Users\LENOVO\Desktop\Bilge Adam\MVC\29.08.2023\ECommerce\ECommerce.Common\bin\Debug\net7.0\ECommerce.Entity.dll
+C:\Users\LENOVO\Desktop\Bilge Adam\MVC\29.08.2023\ECommerce\ECommerce.Common\bin\Debug\net7.0\ECommerce.Entity.pdb
+C:\Users\LENOVO\Desktop\Bilge Adam\MVC\29.08.2023\ECommerce\ECommerce.Common\obj\Debug\net7.0\ECommerce.Common.csproj.CopyComplete

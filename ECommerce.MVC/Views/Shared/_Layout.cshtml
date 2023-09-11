@@ -1,5 +1,6 @@
-﻿@{
-    var sepet = SessionHelper.GetProductFromJson<Cart>(Context.Session,"sepet");
+﻿
+@{
+    var sepet = SessionHelper.GetProductFromJson<CartService>(Context.Session,"sepet");
 }
 
 <!DOCTYPE html>
@@ -75,7 +76,7 @@
                         <i class="bi-cart-fill me-1"></i>
                         Cart
                         @if(sepet != null){
-                            <span class="badge bg-dark text-white ms-1 rounded-pill">@sepet._myCart.Count</span>
+                            <span class="badge bg-dark text-white ms-1 rounded-pill">@sepet.MyCart.Count</span>
                         }
                     </a>
 

@@ -1,8 +1,6 @@
 ﻿using ECommerce.BLL.AbstractServices;
 using ECommerce.Common;
 using ECommerce.MVC.Areas.Dashboard.Models.ViewModels;
-using ECommerce.MVC.Models;
-using ECommerce.MVC.Utils;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using System.Web;

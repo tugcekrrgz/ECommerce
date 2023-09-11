@@ -1,7 +1,6 @@
-﻿@*@model ECommerce.MVC.Areas.Dashboard.Models.ViewModels.OrderVM*@
-
+﻿
 @{
-    var sepet = SessionHelper.GetProductFromJson<Cart>(Context.Session, "sepet");
+    var sepet = SessionHelper.GetProductFromJson<CartService>(Context.Session, "sepet");
     ViewData["Title"] = "MyCart";
     Layout = "~/Views/Shared/_Layout.cshtml";
     decimal? totalPrice = 0;
@@ -24,7 +23,7 @@
                         </tr>
                     </thead>
                     <tbody>
-                        @foreach (var item in sepet._myCart)
+                        @foreach (var item in sepet.MyCart)
                         {
                             totalPrice += item.Value.SubTotal;
                             <tr>
@@ -49,7 +48,7 @@
                             </tr>
                         }
                     </tbody>
-                </table>
+                </table>                
             </div>
             <div class="col-md-3">
                 <div class="card">
@@ -61,24 +60,8 @@
                     </div>
                 </div>
             </div>
-        </div>
-
-        @*<div>
-            <h3>Lütfen Kargo Firması Seçiniz :</h3>
-            <form method="post">
-                <div class="form-group">
-                    <div>
-                        <select class="form-control" asp-items="@ViewBag.Shippers" action="CompleteCart" name="choiceShipper" asp-controller="Cart" asp-for="ShipperId">
-                            <option selected="" disable>Seçiniz...</option>
-                        </select>
-                        <span asp-validation-for="ShipperId"></span>
-                    </div>
-                </div>
-            </form>
-            
-        </div>*@
+        </div>   
     </div>
-    
 </div>
 
 

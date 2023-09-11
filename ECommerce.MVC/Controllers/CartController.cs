@@ -1,14 +1,12 @@
 ﻿using ECommerce.BLL.AbstractServices;
+using ECommerce.BLL.Services;
 using ECommerce.Common;
 using ECommerce.Entity.Entity;
-using ECommerce.MVC.Areas.Dashboard.Models.ViewModels;
-using ECommerce.MVC.Models;
 using ECommerce.MVC.Utils;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
-using System.Diagnostics.Eventing.Reader;
 
 namespace ECommerce.MVC.Controllers
 {
@@ -20,7 +18,7 @@ namespace ECommerce.MVC.Controllers
         private readonly IOrderDetailService _orderDetailService;
         private readonly IShipperService _shipperService;
 
-        public CartController(IProductService productService,UserManager<IdentityUser> userManager, IOrderService orderService, IOrderDetailService orderDetailService,IShipperService shipperService)
+        public CartController(IProductService productService, UserManager<IdentityUser> userManager, IOrderService orderService, IOrderDetailService orderDetailService, IShipperService shipperService)
         {
             _productService = productService;
             _userManager = userManager;
@@ -33,16 +31,16 @@ namespace ECommerce.MVC.Controllers
             var product = _productService.GetById(id);
             if (product != null)
             {
-                Cart cartSession;
+                CartService cartService;
 
-                if (SessionHelper.GetProductFromJson<Cart>(HttpContext.Session, "sepet") == null)
+                if (SessionHelper.GetProductFromJson<CartService>(HttpContext.Session, "sepet") == null)
                 {
-                    cartSession = new Cart();
+                    cartService = new CartService();
 
                 }
                 else
                 {
-                    cartSession = SessionHelper.GetProductFromJson<Cart>(HttpContext.Session, "sepet");
+                    cartService = SessionHelper.GetProductFromJson<CartService>(HttpContext.Session, "sepet");
                 }
 
                 CartItem cartItem = new CartItem();
@@ -50,8 +48,8 @@ namespace ECommerce.MVC.Controllers
                 cartItem.ProductName = product.ProductName;
                 cartItem.UnitPrice = product.UnitPrice;
 
-                cartSession.AddItem(cartItem);
-                SessionHelper.SetJsonProduct(HttpContext.Session, "sepet", cartSession);
+                cartService.AddItem(cartItem);
+                SessionHelper.SetJsonProduct(HttpContext.Session, "sepet", cartService);
 
 
                 return RedirectToAction("Index","Home");
@@ -63,28 +61,29 @@ namespace ECommerce.MVC.Controllers
         [HttpPost]
         public IActionResult UpdateCart(int id, short quantity)
         {
-            var cart = SessionHelper.GetProductFromJson<Cart>(HttpContext.Session, "sepet");
+            var cart = SessionHelper.GetProductFromJson<CartService>(HttpContext.Session, "sepet");
             cart.UpdateItem(id,quantity);
-            SessionHelper.SetJsonProduct(HttpContext.Session, "sepet",cart);
+            SessionHelper.SetJsonProduct(HttpContext.Session, "sepet", cart);
             return RedirectToAction("MyCart");
         }
 
         [Authorize]
         public IActionResult MyCart()
         {
-            ViewBag.Shippers = _shipperService.GetAllShippers().Select(x => new SelectListItem
+            /*ViewBag.Shippers = _shipperService.GetAllShippers().Select(x => new SelectListItem
             {
                 Text = x.CompanyName,
                 Value = x.Id.ToString()
-            }); ;
-            return View();            
+            });*/
+            return View();
         }
+        
 
         [Authorize]
         public async Task<IActionResult> CompleteCart()
         {
-            Cart cart = SessionHelper.GetProductFromJson<Cart>(HttpContext.Session, "sepet");
-            
+            CartService cart = SessionHelper.GetProductFromJson<CartService>(HttpContext.Session, "sepet");
+
             //Order
             Order order = new Order();
             var user = await _userManager.GetUserAsync(User);
@@ -92,7 +91,7 @@ namespace ECommerce.MVC.Controllers
             _orderService.Create(order);
 
             //Order Detail
-            foreach (var item in cart._myCart)
+            foreach (var item in cart.MyCart)
             {
                 OrderDetail orderDetail = new OrderDetail();
                 Product product = _productService.GetById(item.Value.Id);
@@ -112,11 +111,12 @@ namespace ECommerce.MVC.Controllers
 
             //Sepetin boşaltılması
 
-            SessionHelper.RemoveSession(HttpContext.Session,"sepet");
+            SessionHelper.RemoveSession(HttpContext.Session, "sepet");
 
 
-            return RedirectToAction("Confirmation",order);
+            return RedirectToAction("Confirmation", order);
         }
+
 
         public IActionResult Confirmation(Order order)
         {
