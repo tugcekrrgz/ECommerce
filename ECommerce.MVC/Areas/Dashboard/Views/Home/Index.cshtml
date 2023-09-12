@@ -1,5 +1,4 @@
-﻿@model List<ECommerce.Entity.Entity.Order>
-
+﻿
 @{
     ViewData["Title"] = "Index";
     Layout = "~/Areas/Dashboard/Views/Shared/_DashboardLayout.cshtml";
@@ -27,9 +26,9 @@
                 <!-- small box -->
                 <div class="small-box bg-info">
                     <div class="inner">
-                        <h3>150</h3>
+                        <h3>@ViewBag.OrderCount</h3>
 
-                        <p>New Orders</p>
+                        <p>Toplam Sipariş</p>
                     </div>
                     <div class="icon">
                         <i class="ion ion-bag"></i>
@@ -42,9 +41,9 @@
                 <!-- small box -->
                 <div class="small-box bg-success">
                     <div class="inner">
-                        <h3>53<sup style="font-size: 20px">%</sup></h3>
+                        <h3>@ViewBag.TotalProduct</h3>
 
-                        <p>Bounce Rate</p>
+                        <p>Toplam Ürün</p>
                     </div>
                     <div class="icon">
                         <i class="ion ion-stats-bars"></i>
@@ -57,9 +56,9 @@
                 <!-- small box -->
                 <div class="small-box bg-warning">
                     <div class="inner">
-                        <h3>44</h3>
+                        <h3>@ViewBag.UserCount</h3>
 
-                        <p>User Registrations</p>
+                        <p>Toplam Kullanıcı</p>
                     </div>
                     <div class="icon">
                         <i class="ion ion-person-add"></i>
@@ -72,9 +71,9 @@
                 <!-- small box -->
                 <div class="small-box bg-danger">
                     <div class="inner">
-                        <h3>65</h3>
+                        <h3>@ViewBag.TotalRevenue</h3>
 
-                        <p>Unique Visitors</p>
+                        <p>Toplam Gelir</p>
                     </div>
                     <div class="icon">
                         <i class="ion ion-pie-graph"></i>
@@ -107,24 +106,26 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    @foreach (var order in Model)
+                                    @foreach (var order in ViewBag.Orders as List<IGrouping<int, OrderDTO>>)
                                     {
                                         subTotal=0;
                                         <tr>
-                                            <td></td>
-                                            <td>@order.CreatedDate</td>
-                                            <td>@order.Id</td>  
-                                            @foreach(var item in ViewBag.OrderDetails as List<ECommerce.Entity.Entity.OrderDetail>){
-                                                @if(item.OrderId==order.Id){
-                                                    subTotal += item.UnitPrice;
-                                                }
-                                            }
-                                            <td>@subTotal</td>
+                                            <td>@order.Key</td>
+                                            <td>@order.Where(x=> x.Id==order.Key).FirstOrDefault().OrderDate</td>
+                                            <td>@order.Key</td>
+                                            <td>@order.Where(x=> x.Id==order.Key).Sum(x=> x.TotalPrice)</td>
                                             <td>
-                                                <a class="btn btn-success btn-sm" asp-action="ShipperDetail" asp-controller="Shipper">Kargo Bilgileri</a>
+                                                @if (@order.Where(x => x.Id == order.Key).FirstOrDefault().ShipperId != null)
+                                                {
+                                                    <a class="btn btn-success btn-sm" asp-action="Details" asp-controller="Order">Kargo Bilgileri</a>
+                                                }
+                                                else
+                                                {
+                                                    <a class="btn btn-warning btn-sm" asp-action="AddShipper" asp-controller="Order" asp-route-id="@order.Key">Kargo Oluştur</a>
+                                                }                                                
                                             </td>
                                             <td>
-                                                <a class="btn btn-danger btn-sm" asp-action="Details" asp-controller="Order" asp-route-id="@order.Id">Sipariş Detayları</a>
+                                                <a class="btn btn-danger btn-sm" asp-action="Details" asp-controller="Order" asp-route-id="@order.Key">Sipariş Detayları</a>
                                             </td>
                                         </tr>
                                     }

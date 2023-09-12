@@ -29,7 +29,7 @@ namespace ECommerce.BLL.Services
 
         public IEnumerable<Shipper> GetAllShippers()
         {
-            return _shipperRepository.GetAll();
+            return _shipperRepository.GetAll().Where(x => x.Status==Entity.Enum.Status.Active).ToList();
         }
 
         public Shipper GetById(int id)

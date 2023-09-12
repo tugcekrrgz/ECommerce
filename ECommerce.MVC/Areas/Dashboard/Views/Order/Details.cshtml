@@ -29,13 +29,14 @@
                         {
                             @if (item.OrderId == Model.Id)
                             {
+                                subTotal = 0;
                                 <tr>
                                     <td>@item.ProductId</td>
                                     @foreach (var product in ViewBag.Products as List<Product>)
                                     {
                                         @if (product.Id == item.ProductId)
                                         {
-                                            subTotal = product.UnitPrice * item.Quantity;
+                                            subTotal += product.UnitPrice * item.Quantity;
                                             <td>@product.ProductName</td>
                                             <td>@product.UnitPrice</td>
                                             <td>@item.Quantity</td>

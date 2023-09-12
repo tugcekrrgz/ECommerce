@@ -1,4 +1,5 @@
-﻿using ECommerce.Entity.Entity;
+﻿using ECommerce.Common.DTOs;
+using ECommerce.Entity.Entity;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,7 +11,11 @@ namespace ECommerce.BLL.AbstractServices
     public interface IOrderService
     {
         //List
-        IEnumerable<Order> GetAllOrders();
+        public List<IGrouping<int,OrderDTO>> GetAllOrders();
+
+        int GetTotalOrderCount();
+
+        decimal GetTotalRevenue();
 
         //Create
         string Create(Order order);
@@ -23,5 +28,7 @@ namespace ECommerce.BLL.AbstractServices
 
         //Get
         Order GetById(int id);
+
+        OrderDTO GetOrderById(int id);
     }
 }

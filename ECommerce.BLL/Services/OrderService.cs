@@ -1,5 +1,6 @@
 ﻿using ECommerce.BLL.Abstract;
 using ECommerce.BLL.AbstractServices;
+using ECommerce.Common.DTOs;
 using ECommerce.DAL.Context;
 using ECommerce.Entity.Entity;
 using System;
@@ -12,10 +13,12 @@ namespace ECommerce.BLL.Services
 {
     public class OrderService : IOrderService
     {
+        private readonly ECommerceContext _context;
         private readonly IRepository<Order> _orderRepository;
 
         public OrderService(ECommerceContext context, IRepository<Order> orderRepository)
         {
+            _context = context;
             _orderRepository = orderRepository;
         }
 
@@ -40,14 +43,49 @@ namespace ECommerce.BLL.Services
             return _orderRepository.Delete(id);
         }
 
-        public IEnumerable<Order> GetAllOrders()
+        public List<IGrouping<int, OrderDTO>> GetAllOrders()
         {
-            return _orderRepository.GetAll();
+            var orderQuery = from o in _context.Orders
+                         join od in _context.OrderDetails on o.Id equals od.OrderId
+                         select new OrderDTO
+                         {
+                             Id = o.Id,
+                             OrderDate = o.CreatedDate,
+                             TotalPrice = od.Quantity * od.UnitPrice,
+                             ShipperId=o.ShipperId
+                         };
+            var orders = orderQuery.GroupBy(x => x.Id).ToList();
+            return orders;
         }
 
         public Order GetById(int id)
         {
             return _orderRepository.GetById(id);
+        }
+
+        public OrderDTO GetOrderById(int id)
+        {
+            var order = from o in _context.Orders
+                        join od in _context.OrderDetails on o.Id equals od.OrderId
+                        where o.Id == id 
+                        select new OrderDTO 
+                        { 
+                            Id = o.Id,
+                            OrderDate = o.CreatedDate,
+                            TotalPrice = od.Quantity * od.UnitPrice,
+                            ShipperId = o.ShipperId
+                        };
+            return order.FirstOrDefault(x => x.Id==id);
+        }
+
+        public int GetTotalOrderCount()
+        {
+            return _context.Orders.Count();
+        }
+
+        public decimal GetTotalRevenue()
+        {
+            return _context.OrderDetails.Sum(x => x.UnitPrice*x.Quantity).Value;
         }
 
         public string Update(Order order)
