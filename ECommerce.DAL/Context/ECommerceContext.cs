@@ -127,7 +127,7 @@ namespace ECommerce.DAL.Context
         {
             if (!optionsBuilder.IsConfigured)
             {
-                optionsBuilder.UseSqlServer("server=DESKTOP-I9V1GOS\\SQLEXPRESS;database=ECommerceDB;uid=sa;pwd=Tugce8417058;TrustServerCertificate=True");
+                optionsBuilder.UseSqlServer("server=DESKTOP-I9V1GOS\\SQLEXPRESS;database=ECommerceDB;uid=sa;pwd=;TrustServerCertificate=True");
             }
 
             base.OnConfiguring(optionsBuilder);
